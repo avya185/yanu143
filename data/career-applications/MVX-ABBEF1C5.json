@@ -1,0 +1,24 @@
+{
+  "referenceId": "MVX-ABBEF1C5",
+  "submittedAt": "2026-06-07T09:44:02.055Z",
+  "roleId": "ai-ml-engineer",
+  "roleTitle": "AI/ML Engineer",
+  "department": "AI & Automation",
+  "fullName": "Automated Career Test",
+  "email": "career.test@example.com",
+  "countryIso2": "in",
+  "country": "India (भारत)",
+  "phoneCountryIso2": "in",
+  "phoneDialCode": "+91",
+  "phoneLocal": "9876543210",
+  "phone": "+919876543210",
+  "location": "Remote / Delhi",
+  "experience": "1-3 years",
+  "portfolioUrl": "https://example.com",
+  "coverNote": "This is an automated test submission for the careers form. Please ignore.",
+  "resume": {
+    "originalName": "temp_resume.pdf",
+    "mimeType": "application/pdf",
+    "size": 499
+  }
+}

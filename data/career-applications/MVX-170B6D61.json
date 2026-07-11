@@ -1,0 +1,20 @@
+{
+  "referenceId": "MVX-170B6D61",
+  "submittedAt": "2026-06-06T10:46:50.948Z",
+  "roleId": "web-development-intern",
+  "roleTitle": "Web Development Intern",
+  "department": "Careers",
+  "fullName": "Careers Test",
+  "email": "careertest2@example.com",
+  "countryIso2": "in",
+  "country": "India (भारत)",
+  "phoneCountryIso2": "in",
+  "phoneDialCode": "+91",
+  "phoneLocal": "4444444444",
+  "phone": "+914444444444",
+  "location": "Pune",
+  "experience": "0-1 years",
+  "portfolioUrl": "https://github.com/test",
+  "coverNote": "Testing careers form with new separate credentials for carrersmavionix@gmail.com email account.",
+  "resume": null
+}
