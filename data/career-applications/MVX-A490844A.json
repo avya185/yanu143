@@ -1,0 +1,20 @@
+{
+  "referenceId": "MVX-A490844A",
+  "submittedAt": "2026-06-06T10:47:58.969Z",
+  "roleId": "cybersecurity-analyst",
+  "roleTitle": "Cybersecurity Analyst",
+  "department": "Careers",
+  "fullName": "Final Careers Test",
+  "email": "finalcareers@example.com",
+  "countryIso2": "in",
+  "country": "India (भारत)",
+  "phoneCountryIso2": "in",
+  "phoneDialCode": "+91",
+  "phoneLocal": "2222222222",
+  "phone": "+912222222222",
+  "location": "Hyderabad",
+  "experience": "3-5 years",
+  "portfolioUrl": "https://linkedin.com/in/test",
+  "coverNote": "This is a final test for the careers form to ensure applications are being sent correctly to carrersmavionix@gmail.com with all details properly configured.",
+  "resume": null
+}

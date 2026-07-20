@@ -1,0 +1,6 @@
+{
+  "name": "MaVionix Web and AI Solutions",
+  "description": "Clean, highly responsive website and AI chatbot assistant interface for MaVionix",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,24 @@
+{
+  "referenceId": "MVX-74613425",
+  "submittedAt": "2026-06-07T08:46:54.049Z",
+  "roleId": "full-stack-developer",
+  "roleTitle": "Full Stack Developer",
+  "department": "Engineering",
+  "fullName": "Automated Candidate",
+  "email": "candidate.auto@example.com",
+  "countryIso2": "in",
+  "country": "India (भारत)",
+  "phoneCountryIso2": "in",
+  "phoneDialCode": "+91",
+  "phoneLocal": "7818077404",
+  "phone": "+917818077404",
+  "location": "Hyderabad",
+  "experience": "1-3 years",
+  "portfolioUrl": "https://example.com",
+  "coverNote": "Automated test cover note of sufficient length to pass validation and provide context about fit.",
+  "resume": {
+    "originalName": "sample_resume.pdf",
+    "mimeType": "application/pdf",
+    "size": 148
+  }
+}
