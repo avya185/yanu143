@@ -104,6 +104,17 @@ export default function AIAssistant() {
   const [messages, setMessages] = useState<ChatMessage[]>(() => {
     if (typeof window !== 'undefined') {
       const saved = window.localStorage.getItem('mavionix-ai-chat');
+<<<<<<< HEAD
+=======
+      if (saved) {
+        try {
+          const parsed = JSON.parse(saved);
+          if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+        } catch {
+          window.localStorage.removeItem('mavionix-ai-chat');
+        }
+      }
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     }
     return [INITIAL_MESSAGE];
   });
@@ -220,7 +231,11 @@ export default function AIAssistant() {
           role: 'assistant',
           content:
             data.text ||
+<<<<<<< HEAD
             "I apologize, but I couldn't process that query correctly. Please contact us directly at mavionix360@gmail.com!",
+=======
+            "I apologize, but I couldn't process that query correctly. Please contact us directly at contactmavionix@gmail.com!",
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           sources: data.sources || [],
           intent: data.intent,
           nextActions: data.nextActions || [],
@@ -234,11 +249,19 @@ export default function AIAssistant() {
         {
           role: 'assistant',
           content:
+<<<<<<< HEAD
             'I had trouble reaching the MaVionix operations hub. You can still send your brief on WhatsApp at +91 78180 37404 or email mavionix360@gmail.com.',
           intent: 'handoff',
           nextActions: [
             { label: 'Open WhatsApp', href: 'https://wa.me/917818037404' },
             { label: 'Email Team', href: 'mailto:mavionix360@gmail.com' },
+=======
+            'I had trouble reaching the MaVionix operations hub. You can still send your brief on WhatsApp at +91 78180 37404 or email contactmavionix@gmail.com.',
+          intent: 'handoff',
+          nextActions: [
+            { label: 'Open WhatsApp', href: 'https://wa.me/917818037404' },
+            { label: 'Email Team', href: 'mailto:contactmavionix@gmail.com' },
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           ],
           isFallback: true,
         },
@@ -252,7 +275,14 @@ export default function AIAssistant() {
     window.localStorage.removeItem('mavionix-ai-chat');
     setMessages([
       {
+<<<<<<< HEAD
         ...INITIAL_MESSAGE, },
+=======
+        ...INITIAL_MESSAGE,
+        content:
+          'History cleared. Ask me anything about deliverables, MSME status, pricing, timelines, office locations, or technical architecture.',
+      },
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     ]);
   };
 
@@ -373,7 +403,11 @@ export default function AIAssistant() {
                     <div className="whitespace-pre-wrap">{renderMessageText(msg.content)}</div>
 
                     {msg.role === 'assistant' && (
+<<<<<<< HEAD
                       <div className="mt-2 flex  items-center gap-1.5">
+=======
+                      <div className="mt-2 flex flex-wrap items-center gap-1.5">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                         <button
                           type="button"
                           onClick={() => handleCopy(msg.content, idx)}

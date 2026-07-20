@@ -1,5 +1,9 @@
 /**
+<<<<<<< HEAD
  * GradientButton -MaVionix signature gradient CTA (matches blog theme).
+=======
+ * GradientButton — MaVionix signature gradient CTA (matches blog theme).
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
  */
 const SIZES = {
   sm: 'px-4 py-2 text-sm',

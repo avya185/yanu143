@@ -1,7 +1,11 @@
 import { PORTFOLIO_FILTERS } from '../../data/portfolio';
 
 /**
+<<<<<<< HEAD
  * ProjectFilter -Category toggle bar above project grid (blueprint Section 5).
+=======
+ * ProjectFilter — Category toggle bar above project grid (blueprint Section 5).
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
  */
 const ProjectFilter = ({ activeCategory, onCategoryChange }) => (
   <div

@@ -118,7 +118,10 @@ html:not(.dark) .force-black-icon.force-black-icon {
   color: #0f172a !important;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 .about-robo-stage {
   position: relative;
   width: min(78vw, 390px);
@@ -606,7 +609,11 @@ html.dark ::selection {
 }
 
 /* ==============================================================
+<<<<<<< HEAD
    CORE THEME SYSTEM -single source of truth for light/dark
+=======
+   CORE THEME SYSTEM — single source of truth for light/dark
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
    (This replaces three previously overlapping "final" blocks that
    each redefined the same selectors with different hex values,
    which was the source of the light/dark inconsistencies.)
@@ -661,7 +668,11 @@ html.dark :where([class*="bg-[#07070f]"], [class*="bg-[#05050a]"], [class*="bg-[
 
 /* Elements that are intentionally bg-slate-950 in light mode but want the
    brand purple in dark mode (back buttons, table header rows, icon badges
+<<<<<<< HEAD
    across the legal pages, Navbar, and other sections) -this must come
+=======
+   across the legal pages, Navbar, and other sections) — this must come
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
    after the generic "obsidian panel" rule above so it wins the cascade
    tie (equal specificity, both !important, later rule wins). */
 html.dark :where([class*="dark:bg-[#6d28d9]"]) {
@@ -1483,7 +1494,11 @@ html.dark .glow-blue-card:hover {
 }
 
 /* ==============================================================
+<<<<<<< HEAD
    MAVIONIX AI ASSISTANT -SELF-CONTAINED THEME
+=======
+   MAVIONIX AI ASSISTANT — SELF-CONTAINED THEME
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
    Every surface below is namespaced under .ai-widget-* so it can
    never be caught by the site-wide dark-mode [class*="bg-..."]
    overrides above. Light values are the default; html.dark values

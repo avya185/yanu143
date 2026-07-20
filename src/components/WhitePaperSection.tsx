@@ -13,7 +13,13 @@ import {
   Target,
   Users2,
 } from 'lucide-react';
+<<<<<<< HEAD
 import PageHero from './ui/PageHero';
+=======
+import { motion } from 'motion/react';
+import PageHero from './ui/PageHero';
+import { cardFadeUp, cardViewport, cardTransition } from '../utils/animations';
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
 interface WhitePaperSectionProps {
   onViewChange: (view: string, slug?: string) => void;
@@ -69,19 +75,31 @@ const marketTrends = [
     icon: Brain,
     title: 'AI Is Now Table Stakes',
     description:
+<<<<<<< HEAD
       'Buyers no longer see AI as a premium add-on - from chatbots to SEO to workflow automation, they expect intelligent, LLM-backed capability built into every digital service from day one.',
+=======
+      'Buyers no longer see AI as a premium add-on — from chatbots to SEO to workflow automation, they expect intelligent, LLM-backed capability built into every digital service from day one.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   },
   {
     icon: Building2,
     title: 'Fragmented Vendor Fatigue',
     description:
+<<<<<<< HEAD
       'Most growing businesses juggle 3–7 separate vendors for their website, chatbots, design, SEO, and automation - creating coordination overhead, inconsistent branding, and duplicated spend.',
+=======
+      'Most growing businesses juggle 3–7 separate vendors for their website, chatbots, design, SEO, and automation — creating coordination overhead, inconsistent branding, and duplicated spend.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   },
   {
     icon: Sparkles,
     title: 'Managed Services Over DIY Tools',
     description:
+<<<<<<< HEAD
       'The market is full of self-serve SaaS platforms, but far fewer partners who will actually build, document, and manage the solution - a gap that favours hands-on, service-led delivery.',
+=======
+      'The market is full of self-serve SaaS platforms, but far fewer partners who will actually build, document, and manage the solution — a gap that favours hands-on, service-led delivery.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   },
   {
     icon: Target,
@@ -99,7 +117,11 @@ const marketTrends = [
     icon: BarChart3,
     title: 'SMEs Are Underserved at the Middle',
     description:
+<<<<<<< HEAD
       'The market splits sharply between expensive enterprise platforms and inconsistent freelancers - leaving a wide-open middle ground for quality, affordable, professionally delivered work.',
+=======
+      'The market splits sharply between expensive enterprise platforms and inconsistent freelancers — leaving a wide-open middle ground for quality, affordable, professionally delivered work.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   },
 ];
 
@@ -117,12 +139,20 @@ const positioningPillars = [
   {
     pillar: 'Transparency',
     reality: 'Many platforms hide pricing behind discovery calls and sales pipelines.',
+<<<<<<< HEAD
     promise: 'Clear, published packages and deliverables - no guesswork required.',
+=======
+    promise: 'Clear, published packages and deliverables — no guesswork required.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   },
   {
     pillar: 'Management',
     reality: 'DIY SaaS tools require clients to learn, configure, and maintain them.',
+<<<<<<< HEAD
     promise: 'We build it, document it, and manage it - not just hand over a tool.',
+=======
+    promise: 'We build it, document it, and manage it — not just hand over a tool.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   },
   {
     pillar: 'Local Understanding',
@@ -141,24 +171,40 @@ const usps = [
   {
     title: 'Managed Operations, Not Just Tools',
     statement:
+<<<<<<< HEAD
       'Your chatbot and workflows built, documented, and managed - not just another DIY builder you have to learn yourself.',
+=======
+      'Your chatbot and workflows built, documented, and managed — not just another DIY builder you have to learn yourself.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     audience: 'Non-technical founders and operations managers',
   },
   {
     title: 'Agnostic AI Brains',
+<<<<<<< HEAD
     statement: "Choose your AI model - OpenAI, Claude, or Gemini. Your intelligence, your choice.",
+=======
+    statement: "Choose your AI model — OpenAI, Claude, or Gemini. Your intelligence, your choice.",
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     audience: 'Tech-aware startups and product teams',
   },
   {
     title: 'Zero Platform Fragmentation',
     statement:
+<<<<<<< HEAD
       'From landing pages to WhatsApp bots to SEO - one strategic partner, one invoice, zero platform confusion.',
+=======
+      'From landing pages to WhatsApp bots to SEO — one strategic partner, one invoice, zero platform confusion.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     audience: 'Busy founders managing multiple agencies',
   },
   {
     title: 'Regional India Ready',
     statement:
+<<<<<<< HEAD
       "Built for Bharat - Hindi-first chatbots, regional SEO, and WhatsApp automations that speak your customers' language.",
+=======
+      "Built for Bharat — Hindi-first chatbots, regional SEO, and WhatsApp automations that speak your customers' language.",
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     audience: 'Tier 2 city businesses and regional brands',
   },
   {
@@ -195,7 +241,11 @@ export default function WhitePaperSection({ onViewChange }: WhitePaperSectionPro
             <span className="text-gradient-lead">fragmented digital market</span>
           </>
         }
+<<<<<<< HEAD
         description="A look at the digital services landscape MaVionix operates in - market size and growth across our core domains, the trends reshaping buyer expectations, and how we've chosen to position ourselves within it."
+=======
+        description="A look at the digital services landscape MaVionix operates in — market size and growth across our core domains, the trends reshaping buyer expectations, and how we've chosen to position ourselves within it."
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
         actions={
           <>
             <button
@@ -222,10 +272,17 @@ export default function WhitePaperSection({ onViewChange }: WhitePaperSectionPro
       />
 
       {/* Introduction */}
+<<<<<<< HEAD
       <div className="reveal-up mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 lg:px-8">
         <p className="text-sm leading-7 text-slate-600 dark:text-slate-300 sm:text-base">
           The digital services market  - spanning web development, AI chatbots, workflow automation, content, SEO,
           HR technology, and design - is large, fast-growing, and increasingly shaped by AI. Yet most businesses
+=======
+      <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 lg:px-8">
+        <p className="text-sm leading-7 text-slate-600 dark:text-slate-300 sm:text-base">
+          The digital services market — spanning web development, AI chatbots, workflow automation, content, SEO,
+          HR technology, and design — is large, fast-growing, and increasingly shaped by AI. Yet most businesses
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           experience it as fragmented: a different vendor for the website, another for the chatbot, another for
           SEO, and no one owning the outcome end-to-end. This white paper summarizes what our research into these
           markets shows, and where MaVionix has chosen to position itself within them.
@@ -233,14 +290,23 @@ export default function WhitePaperSection({ onViewChange }: WhitePaperSectionPro
       </div>
 
       {/* Market Landscape */}
+<<<<<<< HEAD
       <div className="reveal-up mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+=======
+      <div className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
         <SectionIntro
           eyebrow="Market Landscape"
           title="Growth across our core domains"
           text="Each of the domains MaVionix operates in is experiencing double-digit growth, driven largely by AI adoption and digital transformation."
         />
+<<<<<<< HEAD
         <div className="reveal-up  mt-10 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-950">
           <table className="reveal-up  w-full text-left text-sm">
+=======
+        <div className="mt-10 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-950">
+          <table className="w-full text-left text-sm">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             <thead>
               <tr className="border-b border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-900/60">
                 <th className="px-5 py-3 font-black uppercase tracking-wider text-[11px] text-slate-500 dark:text-slate-400">Domain</th>
@@ -250,6 +316,7 @@ export default function WhitePaperSection({ onViewChange }: WhitePaperSectionPro
               </tr>
             </thead>
             <tbody>
+<<<<<<< HEAD
               {marketLandscape.map((row, index) => {
                 const Icon = row.icon;
                 return (
@@ -259,6 +326,14 @@ export default function WhitePaperSection({ onViewChange }: WhitePaperSectionPro
                   >
                     <td className="px-5 py-4 font-bold text-slate-950 dark:text-white">
                       <span className="reveal-up  inline-flex items-center gap-2">
+=======
+              {marketLandscape.map((row) => {
+                const Icon = row.icon;
+                return (
+                  <tr key={row.domain} className="border-b border-slate-100 last:border-0 dark:border-slate-900">
+                    <td className="px-5 py-4 font-bold text-slate-950 dark:text-white">
+                      <span className="inline-flex items-center gap-2">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                         <Icon size={16} className="text-purple-600 dark:text-purple-300" />
                         {row.domain}
                       </span>
@@ -272,7 +347,11 @@ export default function WhitePaperSection({ onViewChange }: WhitePaperSectionPro
             </tbody>
           </table>
         </div>
+<<<<<<< HEAD
         <p className="reveal-up  mt-4 text-center text-xs text-slate-400 dark:text-slate-500">
+=======
+        <p className="mt-4 text-center text-xs text-slate-400 dark:text-slate-500">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           Figures synthesized from public industry research (Grand View Research, Nasscom, and comparable market
           studies) as of 2026.
         </p>
@@ -280,12 +359,17 @@ export default function WhitePaperSection({ onViewChange }: WhitePaperSectionPro
 
       {/* Market Trends */}
       <div className="border-t border-slate-100 bg-slate-50/60 py-20 dark:border-slate-900 dark:bg-slate-950/40">
+<<<<<<< HEAD
         <div className="reveal-up  mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+=======
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           <SectionIntro
             eyebrow="What We're Seeing"
             title="Trends reshaping buyer expectations"
             text="Patterns that show up consistently across every domain we operate in."
           />
+<<<<<<< HEAD
           <div className="reveal-up  mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {marketTrends.map((item, index) => {
               const Icon = item.icon;
@@ -293,13 +377,33 @@ export default function WhitePaperSection({ onViewChange }: WhitePaperSectionPro
                 <article
                   key={item.title}
                   className="reveal rounded-lg border border-slate-200 bg-white p-5 shadow-xl transition hover:-translate-y-1 hover:shadow-2xl dark:border-slate-800 dark:bg-slate-950"
+=======
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {marketTrends.map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <motion.article
+                  key={item.title}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={cardViewport}
+                  variants={cardFadeUp}
+                  transition={cardTransition(index)}
+                  className="rounded-lg border border-slate-200 bg-white p-5 shadow-xl transition hover:-translate-y-1 hover:shadow-2xl dark:border-slate-800 dark:bg-slate-950"
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                 >
                   <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-sm bg-purple-50 text-purple-700 dark:bg-purple-950/40 dark:text-purple-300">
                     <Icon size={20} />
                   </div>
+<<<<<<< HEAD
                   <h3 className="reveal-up  text-lg font-black text-slate-950 dark:text-white">{item.title}</h3>
                   <p className="reveal-up  mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">{item.description}</p>
                 </article>
+=======
+                  <h3 className="text-lg font-black text-slate-950 dark:text-white">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">{item.description}</p>
+                </motion.article>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               );
             })}
           </div>
@@ -307,6 +411,7 @@ export default function WhitePaperSection({ onViewChange }: WhitePaperSectionPro
       </div>
 
       {/* Where MaVionix Stands */}
+<<<<<<< HEAD
       <div className="reveal-up  mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <SectionIntro
           eyebrow="Where We Stand"
@@ -314,6 +419,15 @@ export default function WhitePaperSection({ onViewChange }: WhitePaperSectionPro
           text="The market splits sharply between expensive enterprise platforms on one end and inconsistent, unsupported freelance work on the other - leaving a wide gap in the middle for reliable, professionally delivered, fairly priced work. That's the space MaVionix has chosen to occupy: high-quality delivery, transparent pricing, and a single point of accountability across every service we offer."
         />
         <div className="reveal-up  mt-10 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-950">
+=======
+      <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <SectionIntro
+          eyebrow="Where We Stand"
+          title="Positioned between boutique and enterprise"
+          text="The market splits sharply between expensive enterprise platforms on one end and inconsistent, unsupported freelance work on the other — leaving a wide gap in the middle for reliable, professionally delivered, fairly priced work. That's the space MaVionix has chosen to occupy: high-quality delivery, transparent pricing, and a single point of accountability across every service we offer."
+        />
+        <div className="mt-10 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-950">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           <table className="w-full text-left text-sm">
             <thead>
               <tr className="border-b border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-900/60">
@@ -323,11 +437,16 @@ export default function WhitePaperSection({ onViewChange }: WhitePaperSectionPro
               </tr>
             </thead>
             <tbody>
+<<<<<<< HEAD
               {positioningPillars.map((row, index) => (
                 <tr
                   key={row.pillar}
                   className="reveal border-b border-slate-100 last:border-0 dark:border-slate-900"
                 >
+=======
+              {positioningPillars.map((row) => (
+                <tr key={row.pillar} className="border-b border-slate-100 last:border-0 dark:border-slate-900">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                   <td className="px-5 py-4 font-bold text-slate-950 dark:text-white">{row.pillar}</td>
                   <td className="px-5 py-4 text-slate-600 dark:text-slate-300">{row.reality}</td>
                   <td className="px-5 py-4 text-purple-700 dark:text-purple-300">{row.promise}</td>
@@ -339,25 +458,46 @@ export default function WhitePaperSection({ onViewChange }: WhitePaperSectionPro
       </div>
 
       {/* USPs */}
+<<<<<<< HEAD
       <div className="reveal-up  border-t border-slate-100 bg-slate-50/60 py-20 dark:border-slate-900 dark:bg-slate-950/40">
+=======
+      <div className="border-t border-slate-100 bg-slate-50/60 py-20 dark:border-slate-900 dark:bg-slate-950/40">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionIntro
             eyebrow="What Sets Us Apart"
             title="Our positioning, in our own words"
             text="Six statements that summarize how MaVionix differentiates itself in a crowded market."
           />
+<<<<<<< HEAD
           <div className="reveal-up  mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {usps.map((item, index) => (
               <article
                 key={item.title}
                 className="reveal-up rounded-lg border border-slate-200 bg-white p-5 shadow-xl transition hover:-translate-y-1 hover:shadow-2xl dark:border-slate-800 dark:bg-slate-950"
+=======
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {usps.map((item, index) => (
+              <motion.article
+                key={item.title}
+                initial="hidden"
+                whileInView="visible"
+                viewport={cardViewport}
+                variants={cardFadeUp}
+                transition={cardTransition(index)}
+                className="rounded-lg border border-slate-200 bg-white p-5 shadow-xl transition hover:-translate-y-1 hover:shadow-2xl dark:border-slate-800 dark:bg-slate-950"
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               >
                 <h3 className="text-lg font-black text-slate-950 dark:text-white">{item.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">{item.statement}</p>
                 <p className="mt-4 text-[11px] font-black uppercase tracking-[0.14em] text-purple-700 dark:text-purple-300">
                   {item.audience}
                 </p>
+<<<<<<< HEAD
               </article>
+=======
+              </motion.article>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             ))}
           </div>
         </div>

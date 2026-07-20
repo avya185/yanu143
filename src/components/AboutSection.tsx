@@ -4,7 +4,10 @@ import { Award, ShieldAlert, BadgeCheck, CheckCircle, Milestone, MapPin, Mail, P
 import { AnimatePresence, motion } from 'motion/react';
 import { enhanceImageUrl, enhancedSrcSet } from '../utils/images';
 import PageHero from './ui/PageHero';
+<<<<<<< HEAD
 import { cardViewport, useCardTransition } from '../utils/animations';
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
 interface AboutSectionProps {
   onViewChange: (view: string) => void;
@@ -75,7 +78,10 @@ const DELHI_LOCATION_SLIDES = [
 export default function AboutSection({ onViewChange }: AboutSectionProps) {
   const [activeSlide, setActiveSlide] = useState(0);
   const [activeLocationSlide, setActiveLocationSlide] = useState(0);
+<<<<<<< HEAD
   const cardTransition = useCardTransition();
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
   useEffect(() => {
     const slideTimer = window.setInterval(() => {
@@ -134,7 +140,11 @@ export default function AboutSection({ onViewChange }: AboutSectionProps) {
             </div>
           </div>
 
+<<<<<<< HEAD
           <div className="lg:col-span-7 text-center lg:text-left space-y-4 pt-6">
+=======
+          <div className="lg:col-span-7 text-center lg:text-left space-y-4">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           
           <div className="inline-flex items-center gap-2 rounded-full border border-purple-200/70 bg-white/80 px-3 py-1.5 text-xs font-bold uppercase tracking-[0.24em] text-purple-700 shadow-sm backdrop-blur dark:border-purple-500/25 dark:bg-white/5 dark:text-purple-200 mx-auto lg:mx-0">
   <Building2 size={12} />
@@ -146,7 +156,11 @@ export default function AboutSection({ onViewChange }: AboutSectionProps) {
             </h1>
             <div className="w-16 h-[3px] bg-gradient-to-r from-purple-700 via-indigo-600 to-violet-500 mx-auto lg:mx-0"></div>
             <p className="text-xs sm:text-base text-slate-505 dark:text-slate-400 leading-relaxed font-medium max-w-2xl mx-auto lg:mx-0">
+<<<<<<< HEAD
               Headquartered in A-1/86, Sector-17, Rohini, Delhi - 110089, with an office in Modinagar, Ghaziabad - 201204, MaVionix bridges the gap between manual business routines and modern, automated tech stacks.
+=======
+              Headquartered in Rohini, Delhi - 110085, with an office in Modinagar, Ghaziabad - 201204, MaVionix bridges the gap between manual business routines and modern, automated tech stacks.
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             </p>
           </div>
         </motion.div>
@@ -207,7 +221,11 @@ export default function AboutSection({ onViewChange }: AboutSectionProps) {
               </div>
             </div>
 
+<<<<<<< HEAD
             <div className="pt-4 flex gap-4 items-center">
+=======
+            <div className="pt-4 flex flex-wrap gap-4 items-center">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               <button
                 onClick={() => onViewChange('services')}
                 className="inline-flex items-center gap-1 text-xs font-bold text-purple-700 dark:text-purple-300 uppercase tracking-wider hover:underline"
@@ -238,8 +256,13 @@ export default function AboutSection({ onViewChange }: AboutSectionProps) {
                   key={cert.name}
                   initial={{ opacity: 0, y: 14 }}
                   whileInView={{ opacity: 1, y: 0 }}
+<<<<<<< HEAD
                   viewport={cardViewport}
                   transition={cardTransition(index, 0.4, 0.08, 0.32)}
+=======
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.4, delay: Math.min(index * 0.08, 0.32), ease: [0.22, 1, 0.36, 1] }}
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                   className="flex gap-4 items-start p-3 rounded-sm bg-white dark:bg-slate-950/60 border border-slate-100 dark:border-slate-900 hover:border-blue-500/25 transition-all"
                 >
                   <div className="w-9 h-9 rounded-sm bg-blue-50/50 dark:bg-blue-950/10 border border-blue-50 dark:border-blue-900/10 flex items-center justify-center flex-shrink-0">
@@ -274,8 +297,17 @@ export default function AboutSection({ onViewChange }: AboutSectionProps) {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
             {/* Team Mate 1: Prateek Sharma */}
+<<<<<<< HEAD
             <div
               className="reveal-up bg-white dark:bg-[#0c0c14] border border-slate-205/60 p-6 rounded-sm text-center space-y-4 shadow-sm hover:border-indigo-500/30 dark:hover:border-indigo-400/20 hover:glow-indigo-shimmer hover:-translate-y-1 transition-all duration-300 group accent-line-indigo"
+=======
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.6, delay: 0, ease: [0.16, 1, 0.3, 1] }}
+              className="bg-white dark:bg-[#0c0c14] border border-slate-205/60 p-6 rounded-sm text-center space-y-4 shadow-sm hover:border-indigo-500/30 dark:hover:border-indigo-400/20 hover:glow-indigo-shimmer hover:-translate-y-1 transition-all duration-300 group accent-line-indigo"
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             >
               <div className="mx-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-indigo-50/50 dark:bg-slate-950 flex items-center justify-center border border-[#ebdff7] relative select-none">
                 <span className="text-lg sm:text-xl font-black text-indigo-600 uppercase font-mono group-hover:scale-105 transition-transform duration-200">PS</span>
@@ -290,11 +322,23 @@ export default function AboutSection({ onViewChange }: AboutSectionProps) {
               <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-semibold">
                 Over 8 years of database design, secure Express configurations, and cloud deployment. Alumnus of NCR engineering academies.
               </p>
+<<<<<<< HEAD
             </div>
 
             {/* Team Mate 2: Neha Chawla */}
             <div
               className="reveal-up bg-white dark:bg-[#0c0c14] border border-slate-205/60 p-6 rounded-sm text-center space-y-4 shadow-sm hover:border-rose-500/30 dark:hover:border-rose-400/20 hover:glow-rose-shimmer hover:-translate-y-1 transition-all duration-300 group accent-line-rose"
+=======
+            </motion.div>
+
+            {/* Team Mate 2: Neha Chawla */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.6, delay: 0.12, ease: [0.16, 1, 0.3, 1] }}
+              className="bg-white dark:bg-[#0c0c14] border border-slate-205/60 p-6 rounded-sm text-center space-y-4 shadow-sm hover:border-rose-500/30 dark:hover:border-rose-400/20 hover:glow-rose-shimmer hover:-translate-y-1 transition-all duration-300 group accent-line-rose"
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             >
               <div className="mx-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-rose-50/50 dark:bg-slate-950 flex items-center justify-center border border-[#ebdff7] relative select-none">
                 <span className="text-lg sm:text-xl font-black text-rose-500 uppercase font-mono group-hover:scale-105 transition-transform duration-200">NC</span>
@@ -309,11 +353,23 @@ export default function AboutSection({ onViewChange }: AboutSectionProps) {
               <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-semibold">
                 Focuses strictly on conversion optimization maps, mobile screen layouts (Figma), and seamless interactive wireframe structures.
               </p>
+<<<<<<< HEAD
             </div>
 
             {/* Team Mate 3: Anu Sharma */}
             <div
               className="reveal-up bg-white dark:bg-[#0c0c14] border border-slate-205/60 p-6 rounded-sm text-center space-y-4 shadow-sm hover:border-emerald-500/30 dark:hover:border-emerald-400/20 hover:glow-emerald-shimmer hover:-translate-y-1 transition-all duration-300 group accent-line-emerald"
+=======
+            </motion.div>
+
+            {/* Team Mate 3: Anu Sharma */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.6, delay: 0.24, ease: [0.16, 1, 0.3, 1] }}
+              className="bg-white dark:bg-[#0c0c14] border border-slate-205/60 p-6 rounded-sm text-center space-y-4 shadow-sm hover:border-emerald-500/30 dark:hover:border-emerald-400/20 hover:glow-emerald-shimmer hover:-translate-y-1 transition-all duration-300 group accent-line-emerald"
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             >
               <div className="mx-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-emerald-50/50 dark:bg-slate-950 flex items-center justify-center border border-[#ebdff7] relative select-none">
                 <span className="text-lg sm:text-xl font-black text-emerald-600 uppercase font-mono group-hover:scale-105 transition-transform duration-200">AS</span>
@@ -328,7 +384,11 @@ export default function AboutSection({ onViewChange }: AboutSectionProps) {
               <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-semibold">
                 Deploys official Meta Sandbox sandboxes, n8n databases flows, OpenAI vector embeddings, and LangChain chatbot systems.
               </p>
+<<<<<<< HEAD
             </div>
+=======
+            </motion.div>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           </div>
         </section>
 
@@ -354,8 +414,13 @@ export default function AboutSection({ onViewChange }: AboutSectionProps) {
                 key={goal.year}
                 initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
+<<<<<<< HEAD
                 viewport={cardViewport}
                 transition={cardTransition(idx)}
+=======
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                 className="relative"
               >
                 {/* Year tag dot - clean blue minimalism */}
@@ -448,8 +513,13 @@ export default function AboutSection({ onViewChange }: AboutSectionProps) {
                   <MapPin size={15} className="text-purple-700 dark:text-purple-300" />
                   <span className="text-[10px] font-black text-purple-700 dark:text-purple-200 uppercase tracking-widest">Headquarters</span>
                 </div>
+<<<<<<< HEAD
                 <p className="text-sm font-black text-slate-900 dark:text-white">HQ: A-1/86, Sector-17,<br></br> Rohini, Delhi - 110089</p>
                 <p className="text-xs font-semibold text-slate-500 dark:text-slate-300 mt-0.5">Pincode: 110089</p>
+=======
+                <p className="text-sm font-black text-slate-900 dark:text-white">Rohini, Delhi</p>
+                <p className="text-xs font-semibold text-slate-500 dark:text-slate-300 mt-0.5">Pincode: 110085</p>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               </div>
 
               <div className="rounded-sm border border-purple-100 dark:border-purple-800/60 bg-purple-50/70 dark:bg-purple-950/25 p-4">
@@ -465,6 +535,7 @@ export default function AboutSection({ onViewChange }: AboutSectionProps) {
             <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-t border-purple-100 dark:border-purple-800/60 pt-5">
               <div>
                 <span className="text-[10px] text-purple-700 dark:text-purple-200 font-black uppercase tracking-wider block">Coordination Desk</span>
+<<<<<<< HEAD
                 <a href="mailto:mavionix360@gmail.com" className="inline-flex items-center gap-2 text-sm sm:text-base font-black text-slate-900 dark:text-white hover:text-purple-700 dark:hover:text-purple-200 mt-1">
                   <Mail size={15} />
                   mavionix360@gmail.com
@@ -472,6 +543,15 @@ export default function AboutSection({ onViewChange }: AboutSectionProps) {
                 <a href="tel:+917818037404" className="inline-flex items-center gap-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-bold mt-1 hover:text-purple-700 dark:hover:text-purple-200">
                   <Phone size={14} />
                   WhatsApp: +91 7065132579
+=======
+                <a href="mailto:contactmavionix@gmail.com" className="inline-flex items-center gap-2 text-sm sm:text-base font-black text-slate-900 dark:text-white hover:text-purple-700 dark:hover:text-purple-200 mt-1">
+                  <Mail size={15} />
+                  contactmavionix@gmail.com
+                </a>
+                <a href="tel:+917818037404" className="inline-flex items-center gap-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-bold mt-1 hover:text-purple-700 dark:hover:text-purple-200">
+                  <Phone size={14} />
+                  WhatsApp: +91 78180 37404
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                 </a>
               </div>
 

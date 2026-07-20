@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import {
 //   FileText,
 //   Handshake,
@@ -169,6 +170,17 @@
 // }
 import {
   FileText, Handshake, Clock, PenTool, Lightbulb, Wrench, MessageSquare, Briefcase, Mail
+=======
+import {
+  FileText,
+  Handshake,
+  Wallet,
+  Clock,
+  ShieldCheck,
+  Ban,
+  Scale,
+  Mail,
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 } from "lucide-react";
 
 type TermsOfEngagementProps = {
@@ -178,6 +190,10 @@ type TermsOfEngagementProps = {
 export default function TermsOfEngagement({ onViewChange }: TermsOfEngagementProps) {
   return (
     <main className="bg-white text-slate-800 dark:bg-black dark:text-slate-200 mt-10">
+<<<<<<< HEAD
+=======
+      {/* Hero */}
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
       <section className="mt-10 relative overflow-hidden bg-white dark:bg-black">
         <button
           onClick={() => onViewChange('home')}
@@ -195,17 +211,28 @@ export default function TermsOfEngagement({ onViewChange }: TermsOfEngagementPro
             </h1>
             <div className="mt-4 h-1 w-16 rounded-full bg-[#6d28d9]" />
             <p className="mt-6 max-w-md text-slate-600 dark:text-slate-300">
+<<<<<<< HEAD
               This Client Policy Guide outlines how MaVionix operates during every stage of a client relationship-from the first discovery call to final delivery and beyond.
               <br /><br />
               It lays out our collaborative processes, revision protocols, support boundaries, and internal standards.
             </p>
           </div>
+=======
+              These Terms of Engagement govern every project, proposal, and working relationship between MaVionix ("we", "us", or "our") and any client, partner, or visitor who engages our services through www.mavionix.in.
+              <br /><br />
+              By approving a proposal, signing a statement of work, or making a payment towards our services, you agree to be bound by the terms outlined below.
+            </p>
+          </div>
+
+          {/* Decorative illustration */}
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           <div className="relative mx-auto hidden h-64 w-full max-w-sm lg:block">
             <EngagementIllustration className="absolute inset-0 h-full w-full" />
           </div>
         </div>
       </section>
 
+<<<<<<< HEAD
       <section className="mx-auto max-w-6xl px-6 py-16 sm:px-10 lg:px-20">
         <div className="space-y-12">
           
@@ -273,6 +300,75 @@ export default function TermsOfEngagement({ onViewChange }: TermsOfEngagementPro
         </div>
       </section>
 
+=======
+      {/* Content sections */}
+      <section className="mx-auto max-w-6xl px-6 py-16 sm:px-10 lg:px-20">
+        <div className="space-y-12">
+          <PolicySection icon={Handshake} number={1} title="Scope of Engagement">
+            <p>
+              Every engagement begins with a mutually agreed scope of work, covering deliverables, timelines, and
+              milestones. Any request that falls outside this documented scope will be treated as a change request
+              and quoted separately before work begins.
+            </p>
+          </PolicySection>
+
+          <PolicySection icon={Wallet} number={2} title="Payment Terms">
+            <p>
+              Unless otherwise agreed in writing, projects are billed in milestone-based instalments: an upfront
+              booking amount to reserve our team's schedule, followed by milestone payments tied to delivery
+              checkpoints, and a final payment prior to handover of source files or credentials.
+            </p>
+            <ul className="mt-4 grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2">
+              {[
+                "Invoices are due within 7 days of issue",
+                "Work may pause on overdue invoices",
+                "Third-party costs are billed at actuals",
+                "Refunds follow our published refund policy",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2 text-sm text-slate-600 dark:text-slate-300 list-none">
+                  <ShieldCheck className="mt-0.5 h-4 w-4 flex-shrink-0 text-[#6d28d9]" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </PolicySection>
+
+          <PolicySection icon={Clock} number={3} title="Timelines & Delivery">
+            <p>
+              Estimated timelines are shared at the start of a project based on the agreed scope. Delays caused by
+              late feedback, incomplete content, or changes in requirements from the client's side may extend the
+              original delivery schedule proportionately.
+            </p>
+          </PolicySection>
+
+          <PolicySection icon={Scale} number={4} title="Intellectual Property">
+            <p>
+              Full ownership of final, paid-for deliverables transfers to the client upon receipt of full payment.
+              MaVionix retains the right to reuse general frameworks, reusable components, and non-confidential
+              methodologies developed during the engagement for future projects.
+            </p>
+          </PolicySection>
+
+          <PolicySection icon={Ban} number={5} title="Termination">
+            <p>
+              Either party may terminate an ongoing engagement with written notice. In the event of termination,
+              the client is responsible for payment of all work completed up to the termination date, and MaVionix
+              will hand over all completed deliverables corresponding to payments received.
+            </p>
+          </PolicySection>
+
+          <PolicySection icon={FileText} number={6} title="Amendments">
+            <p>
+              These Terms of Engagement may be revised from time to time to reflect changes in our processes or
+              applicable law. Continued use of our services after an update constitutes acceptance of the revised
+              terms. We recommend reviewing this page periodically.
+            </p>
+          </PolicySection>
+        </div>
+      </section>
+
+      {/* Bottom CTA */}
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
       <section className="px-6 pb-16 sm:px-10 lg:px-20">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 rounded-2xl bg-[#F8F1FF] dark:bg-[#0d0f1a] p-6 sm:flex-row sm:justify-between sm:p-8">
           <div className="flex items-center gap-4">
@@ -280,14 +376,24 @@ export default function TermsOfEngagement({ onViewChange }: TermsOfEngagementPro
               <Mail className="h-7 w-7 text-[#6d28d9]" />
             </div>
             <div>
+<<<<<<< HEAD
               <h3 className="font-semibold text-slate-800 dark:text-white">Workflow Inquiries?</h3>
               <p className="mt-1 max-w-lg text-sm text-slate-600 dark:text-slate-300">
                 Reach out to your assigned Project Manager or our main contact desk for clarifications.
+=======
+              <h3 className="font-semibold text-slate-800 dark:text-white">Have Questions?</h3>
+              <p className="mt-1 max-w-lg text-sm text-slate-600 dark:text-slate-300">
+                Reach out to our team for clarifications on any clause before signing off on a proposal.
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               </p>
             </div>
           </div>
           <a
+<<<<<<< HEAD
             href="mailto:mavionix360@gmail.com"
+=======
+            href="mailto:contactmavionix@gmail.com"
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             className="inline-flex flex-shrink-0 items-center gap-2 rounded-full bg-slate-950 dark:bg-[#6d28d9] px-6 py-3 text-sm font-semibold text-white shadow-md shadow-[#C800FF]/30 transition hover:bg-[#AD00E0] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C800FF] focus-visible:ring-offset-2"
           >
             <Mail className="h-4 w-4" />
@@ -299,14 +405,34 @@ export default function TermsOfEngagement({ onViewChange }: TermsOfEngagementPro
   );
 }
 
+<<<<<<< HEAD
 function PolicySection({ icon: Icon, number, title, children }: { icon: React.ComponentType<{ className?: string }>; number: number; title: string; children: React.ReactNode; }) {
+=======
+function PolicySection({
+  icon: Icon,
+  number,
+  title,
+  children,
+}: {
+  icon: React.ComponentType<{ className?: string }>;
+  number: number;
+  title: string;
+  children: React.ReactNode;
+}) {
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   return (
     <div className="flex gap-4 sm:gap-6">
       <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-slate-950 dark:bg-[#6d28d9] text-white">
         <Icon className="h-5 w-5" />
       </div>
       <div className="flex-1">
+<<<<<<< HEAD
         <h2 className="text-lg font-semibold text-slate-800 dark:text-white">{number}. {title}</h2>
+=======
+        <h2 className="text-lg font-semibold text-slate-800 dark:text-white">
+          {number}. {title}
+        </h2>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
         <div className="mt-2 text-slate-600 dark:text-slate-300">{children}</div>
       </div>
     </div>
@@ -325,4 +451,8 @@ function EngagementIllustration({ className }: { className?: string }) {
       <path d="M195 150l7 7 12-14" stroke="white" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed

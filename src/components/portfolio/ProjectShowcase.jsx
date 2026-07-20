@@ -1,19 +1,31 @@
 import { useState } from 'react';
+<<<<<<< HEAD
 import { motion } from 'motion/react';
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 import SectionHeader from '../ui/SectionHeader';
 import ProjectFilter from './ProjectFilter';
 import ProjectCard from './ProjectCard';
 import ProjectDetailModal from './ProjectDetailModal';
 import { useProjectFilter } from '../../hooks/useProjectFilter';
+<<<<<<< HEAD
 import { cardFadeUp, cardViewport, useCardTransition } from '../../utils/animations';
 
 /**
  * ProjectShowcase -Filterable project grid with case study modals (blueprint Section 4).
+=======
+
+/**
+ * ProjectShowcase — Filterable project grid with case study modals (blueprint Section 4).
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
  */
 const ProjectShowcase = ({ sectionRef }) => {
   const { activeCategory, setActiveCategory, filteredProjects } = useProjectFilter('all');
   const [selectedProject, setSelectedProject] = useState(null);
+<<<<<<< HEAD
   const cardTransition = useCardTransition();
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
   return (
     <section
@@ -45,6 +57,7 @@ const ProjectShowcase = ({ sectionRef }) => {
           aria-label="Portfolio projects"
         >
           {filteredProjects.length > 0 ? (
+<<<<<<< HEAD
             filteredProjects.map((project, index) => (
               <motion.div
                 key={project.id}
@@ -57,6 +70,12 @@ const ProjectShowcase = ({ sectionRef }) => {
               >
                 <ProjectCard project={project} onOpen={setSelectedProject} />
               </motion.div>
+=======
+            filteredProjects.map((project) => (
+              <div key={project.id} role="listitem">
+                <ProjectCard project={project} onOpen={setSelectedProject} />
+              </div>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             ))
           ) : (
             <p className="col-span-full py-12 text-center text-slate-500" role="status">

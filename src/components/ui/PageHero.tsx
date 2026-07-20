@@ -36,7 +36,11 @@ export default function PageHero({
 }: PageHeroProps) {
   return (
    <section
+<<<<<<< HEAD
   className={`relative left-1/2 right-1/2  -mx-[50vw] w-screen mt-5  overflow-hidden border-b border-slate-200/70 bg-white/80 dark:border-slate-800/80 dark:bg-[#06070d] ${className}`.trim()}
+=======
+  className={`relative left-1/2 right-1/2 -mt-4 -mx-[50vw] w-screen  overflow-hidden border-b border-slate-200/70 bg-white/80 dark:border-slate-800/80 dark:bg-[#06070d] ${className}`.trim()}
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   aria-label="Page hero"
 >
       <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
@@ -83,7 +87,11 @@ export default function PageHero({
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.16, ease: 'easeOut' }}
+<<<<<<< HEAD
             className="mt-8 flex flex-row flex-wrap items-center justify-center gap-3 sm:flex-row"
+=======
+            className="mt-8 flex flex-col flex-wrap items-center justify-center gap-3 sm:flex-row"
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           >
             {actions}
           </motion.div>

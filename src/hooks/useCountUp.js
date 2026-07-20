@@ -1,7 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 
 /**
+<<<<<<< HEAD
  * useCountUp -Animates a number from 0 to target when element enters viewport.
+=======
+ * useCountUp — Animates a number from 0 to target when element enters viewport.
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
  * Supports integers and decimals (e.g. 4.9 client satisfaction score).
  */
 export function useCountUp(target, duration = 1800, enabled = true, decimals = 0) {

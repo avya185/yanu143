@@ -8,7 +8,11 @@ import ClientTestimonials from './portfolio/ClientTestimonials';
 import WhyChooseSection from './portfolio/WhyChooseSection';
 
 /**
+<<<<<<< HEAD
  * PortfolioPage -Complete MaVionix portfolio hub (standalone deliverable).
+=======
+ * PortfolioPage — Complete MaVionix portfolio hub (standalone deliverable).
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
  */
 // changes3565
 const PortfolioPage = ({ onViewChange }) => {

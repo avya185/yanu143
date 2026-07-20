@@ -1,11 +1,17 @@
 import { useEffect } from 'react';
 import { createPortal } from 'react-dom';
+<<<<<<< HEAD
 import { AnimatePresence, motion } from 'motion/react';
 
 /**
  * Modal -Viewport-centered overlay rendered via portal (escapes transformed ancestors).
  * Overlay fades in/out; content fades + scales/rises in/out via AnimatePresence so the
  * modal never just snaps into or out of existence.
+=======
+
+/**
+ * Modal — Viewport-centered overlay rendered via portal (escapes transformed ancestors).
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
  */
 const Modal = ({
   isOpen,
@@ -32,6 +38,7 @@ const Modal = ({
     };
   }, [isOpen, onClose]);
 
+<<<<<<< HEAD
   return createPortal(
     <AnimatePresence>
       {isOpen && (
@@ -73,6 +80,30 @@ const Modal = ({
         </motion.div>
       )}
     </AnimatePresence>,
+=======
+  if (!isOpen) return null;
+
+  return createPortal(
+    <div
+      className="fixed inset-0 z-[9999] flex items-center justify-center p-4 sm:p-6"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby={ariaLabelledBy}
+    >
+      <button
+        type="button"
+        className={`absolute inset-0 ${overlayClassName}`}
+        onClick={onClose}
+        aria-label="Close dialog"
+      />
+
+      <div
+        className={`relative z-10 w-full max-h-[min(90vh,900px)] overflow-y-auto overscroll-contain ${contentClassName}`}
+      >
+        {children}
+      </div>
+    </div>,
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     document.body,
   );
 };

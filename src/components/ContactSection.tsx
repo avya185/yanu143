@@ -1,13 +1,20 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { SERVICES } from '../data';
+<<<<<<< HEAD
 import { Mail, Phone, MapPin, Globe, Send, MessageCircle, ArrowUpRight, CheckSquare, Sparkles, AlertCircle } from 'lucide-react';
+=======
+import { Mail, Phone, MapPin, Send, MessageCircle, ArrowUpRight, CheckSquare, Sparkles, AlertCircle } from 'lucide-react';
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 import { useCurrency } from '../context/CurrencyContext';
 import { motion, AnimatePresence } from 'motion/react';
 import { enhanceImageUrl, enhancedSrcSet } from '../utils/images';
 import { init, send } from '@emailjs/browser';
 import { CONTACT_EMAILJS_SERVICE_ID, CONTACT_EMAILJS_TEMPLATE_ID, CONTACT_EMAILJS_PUBLIC_KEY } from '../emailjsConfig';
 import PageHero from './ui/PageHero';
+<<<<<<< HEAD
 import { cardFadeUp, cardViewport, useCardTransition } from '../utils/animations';
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
 interface ContactSectionProps {
   bookingPreset: {
@@ -21,7 +28,10 @@ interface ContactSectionProps {
 }
 
 export default function ContactSection({ bookingPreset, onClearPreset }: ContactSectionProps) {
+<<<<<<< HEAD
   const cardTransition = useCardTransition();
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   const { selectedCurrency, convertAmount, formatAmount, translatePriceText } = useCurrency();
   // Input fields state
   const [userName, setUserName] = useState('');
@@ -583,7 +593,11 @@ const containsAbusiveContent = (text: string): { found: boolean; word: string } 
         `Description:\n${userMessage}\n\n` +
         `Please review my request guidelines and draft a customized milestone proposal. Thanks!`
       );
+<<<<<<< HEAD
       return `mailto:mavionix360@gmail.com?subject=${subject}&body=${body}`;
+=======
+      return `mailto:contactmavionix@gmail.com?subject=${subject}&body=${body}`;
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     };
 
     const getWhatsAppLink = () => {
@@ -721,6 +735,7 @@ svg=   {<Sparkles size={14} className="text-purple-700 dark:text-purple-300" />}
           >
             <span className="sr-only">Headquarters contact coordinates</span>
             
+<<<<<<< HEAD
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -729,6 +744,9 @@ svg=   {<Sparkles size={14} className="text-purple-700 dark:text-purple-300" />}
               transition={cardTransition(0)}
               className="p-6 bg-[#fbfbfe] dark:bg-[#0b0b13] border border-slate-200/50 dark:border-slate-900 rounded-sm space-y-6 shadow-sm"
             >
+=======
+            <div className="p-6 bg-[#fbfbfe] dark:bg-[#0b0b13] border border-slate-200/50 dark:border-slate-900 rounded-sm space-y-6 shadow-sm">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               <h3 className="text-[10px] font-black text-purple-700 dark:text-purple-300 uppercase tracking-widest leading-none">
                 Support Parameters
               </h3>
@@ -740,13 +758,19 @@ svg=   {<Sparkles size={14} className="text-purple-700 dark:text-purple-300" />}
                 </div>
                 <div>
                   <h4 className="text-slate-400 font-bold uppercase text-[9px] tracking-wider mb-0.5">Write General Help</h4>
+<<<<<<< HEAD
                   <a href="mailto:mavionix360@gmail.com" className="text-slate-800 dark:text-slate-200 font-black hover:text-purple-700 dark:hover:text-purple-300 transition-colors">
                     mavionix360@gmail.com
+=======
+                  <a href="mailto:contactmavionix@gmail.com" className="text-slate-800 dark:text-slate-200 font-black hover:text-purple-700 dark:hover:text-purple-300 transition-colors">
+                    contactmavionix@gmail.com
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                   </a>
                   <p className="text-[10px] text-slate-400 mt-1 font-medium">Response times under 24 hours</p>
                 </div>
               </div>
 
+<<<<<<< HEAD
               {/* Website Block */}
               <div className="flex gap-4 items-start text-xs sm:text-sm">
                 <div className="w-9 h-9 rounded-sm bg-purple-50/50 dark:bg-purple-950/20 text-purple-700 dark:text-purple-300 flex items-center justify-center shrink-0 border border-purple-100/10">
@@ -760,6 +784,8 @@ svg=   {<Sparkles size={14} className="text-purple-700 dark:text-purple-300" />}
                 </div>
               </div>
 
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               {/* Phone Block */}
               <div className="flex gap-4 items-start text-xs sm:text-sm text-slate-800 dark:text-slate-200">
                 <div className="w-9 h-9 rounded-sm bg-purple-50/50 dark:bg-purple-950/20 text-purple-700 dark:text-purple-300 flex items-center justify-center shrink-0 border border-purple-100/10">
@@ -789,6 +815,7 @@ svg=   {<Sparkles size={14} className="text-purple-700 dark:text-purple-300" />}
                   <p className="text-[10px] text-slate-400 mt-1 font-medium">Delhi NCR operations across Delhi and Uttar Pradesh</p>
                 </div>
               </div>
+<<<<<<< HEAD
             </motion.div>
 
             {/* SLA Promises Card */}
@@ -800,6 +827,12 @@ svg=   {<Sparkles size={14} className="text-purple-700 dark:text-purple-300" />}
               transition={cardTransition(1)}
               className="p-6 bg-white  dark:bg-purple-900  border border-purple-800 rounded-sm text-black"
             >
+=======
+            </div>
+
+            {/* SLA Promises Card */}
+            <div className="p-6 bg-white  dark:bg-purple-900  border border-purple-800 rounded-sm text-black">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               <h4 className="font-extrabold text-xs tracking-wider uppercase flex items-center gap-1.5 mb-3 text-black">
                 <Sparkles size={16} className="text-purple-300 opacity-80" />
                 The MaVionix SLA Standard
@@ -818,7 +851,11 @@ svg=   {<Sparkles size={14} className="text-purple-700 dark:text-purple-300" />}
                   <span>Strict Indian business laws MSME compliant</span>
                 </li>
               </ul>
+<<<<<<< HEAD
             </motion.div>
+=======
+            </div>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
           
           </motion.div>

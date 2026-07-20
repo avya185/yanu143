@@ -3,7 +3,11 @@ import { getProjectFilterGroup } from '../../data/portfolio';
 import { enhanceImageUrl, enhancedSrcSet } from '../../utils/images';
 
 /**
+<<<<<<< HEAD
  * ProjectCard -Individual project with image, meta, technologies, and outcomes.
+=======
+ * ProjectCard — Individual project with image, meta, technologies, and outcomes.
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
  */
 const ProjectCard = ({ project, onOpen }) => (
   <article

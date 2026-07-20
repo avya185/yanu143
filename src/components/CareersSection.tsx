@@ -36,7 +36,11 @@ import { AnimatePresence, color, motion } from 'motion/react';
 import { enhanceImageUrl, enhancedSrcSet } from '../utils/images';
 import PageHero from './ui/PageHero';
 import countryCodes from '../data/countryCodes.json';
+<<<<<<< HEAD
 import { cardFadeHorizontal, cardFadeHorizontalScale, cardViewport, useCardTransition } from '../utils/animations';
+=======
+import { cardFadeUp, cardFadeUpScale, cardViewport, cardTransition } from '../utils/animations';
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
 
 
@@ -655,9 +659,14 @@ export default function CareersSection({ theme }: CareersSectionProps) {
 }
 
 const Hero = memo(function Hero({ onViewRoles, onApply }: { onViewRoles: () => void; onApply: () => void }) {
+<<<<<<< HEAD
   const cardTransition = useCardTransition();
   return (
     <section className="reveal-up relative -mx-[50vw] left-1/2 right-1/2 w-screen overflow-hidden border-b border-slate-200/70 bg-white/80 dark:border-slate-800/80 dark:bg-[#06070d]">
+=======
+  return (
+    <section className="relative -mx-[50vw] left-1/2 right-1/2 w-screen overflow-hidden border-b border-slate-200/70 bg-white/80 dark:border-slate-800/80 dark:bg-[#06070d]">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
       <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(168,85,247,0.07),transparent_35%),radial-gradient(circle_at_80%_15%,rgba(124,58,237,0.045),transparent_30%)] dark:bg-[radial-gradient(circle_at_20%_20%,rgba(124,58,237,0.16),transparent_32%),radial-gradient(circle_at_82%_10%,rgba(59,130,246,0.14),transparent_28%),radial-gradient(circle_at_50%_100%,rgba(16,185,129,0.10),transparent_32%)]" />
         <div className="absolute left-1/2 top-10 h-[360px] w-[360px] -translate-x-1/2 rounded-full bg-purple-200/25 dark:bg-purple-500/10 blur-[120px]" />
@@ -665,7 +674,11 @@ const Hero = memo(function Hero({ onViewRoles, onApply }: { onViewRoles: () => v
         <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-purple-500/35 to-transparent" />
       </div>
 
+<<<<<<< HEAD
       <div className=" relative z-10 mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-16 ">
+=======
+      <div className="relative z-10 mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-16 ">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
         <div className="grid items-center gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
           {/* LEFT: text + stats */}
           <motion.div
@@ -689,7 +702,11 @@ const Hero = memo(function Hero({ onViewRoles, onApply }: { onViewRoles: () => v
               Join a team shaping AI-powered products, scalable web platforms, cybersecurity practices, and digital experiences for growing businesses.
             </p>
 
+<<<<<<< HEAD
             <div className="mt-8 flex flex-row items-center justify-center gap-3 sm:flex-row sm:items-start sm:justify-start">
+=======
+            <div className="mt-8 flex flex-row flex-wrap items-center justify-center gap-3 sm:flex-row sm:items-start sm:justify-start">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               <button onClick={onViewRoles} className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950  px-5 py-3 text-xs font-black uppercase tracking-wider text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg dark:bg-[#6d28d9]">
                 View Open Positions
               </button>
@@ -698,7 +715,11 @@ const Hero = memo(function Hero({ onViewRoles, onApply }: { onViewRoles: () => v
                 <ArrowRight size={16} />
               </button>
             </div>
+<<<<<<< HEAD
             <div className="reveal-up mt-8 grid grid-cols-3 gap-2 sm:gap-4">
+=======
+            <div className="mt-8 grid grid-cols-3 gap-2 sm:gap-4">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               {[
                 { value: '6+', label: 'Open roles' },
                 { value: '40+', label: 'Team members' },
@@ -709,9 +730,15 @@ const Hero = memo(function Hero({ onViewRoles, onApply }: { onViewRoles: () => v
                   initial="hidden"
                   whileInView="visible"
                   viewport={cardViewport}
+<<<<<<< HEAD
                   variants={cardFadeHorizontalScale}
                   transition={cardTransition(statIdx)}
                   className="reveal-up rounded-xl sm:rounded-2xl border border-slate-200/70 bg-white/85 p-2.5 sm:p-4 text-center shadow-[0_20px_60px_rgba(15,23,42,0.06)] backdrop-blur dark:border-white/10 dark:bg-slate-900/70"
+=======
+                  variants={cardFadeUpScale}
+                  transition={cardTransition(statIdx)}
+                  className="rounded-xl sm:rounded-2xl border border-slate-200/70 bg-white/85 p-2.5 sm:p-4 text-center shadow-[0_20px_60px_rgba(15,23,42,0.06)] backdrop-blur dark:border-white/10 dark:bg-slate-900/70"
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                 >
                   <div className="text-base sm:text-2xl font-black tracking-tight text-purple-700 dark:text-purple-300">{stat.value}</div>
                   <div className="mt-1 text-[8px] sm:text-[10px] font-black uppercase tracking-[0.08em] sm:tracking-[0.22em] text-slate-500 dark:text-slate-400">{stat.label}</div>
@@ -765,7 +792,11 @@ const SectionHeader = memo(function SectionHeader({ badge, title, subtitle }: { 
 
 const FeatureGrid = memo(function FeatureGrid({ id, badge, title, subtitle, items, compact = false }: { id: string; badge: string; title: string; subtitle: string; items: FeatureItem[]; compact?: boolean }) {
   return (
+<<<<<<< HEAD
     <div id={id} className=" mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+=======
+    <div id={id} className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
       <SectionHeader badge={badge} title={title} subtitle={subtitle} />
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((item) => {
@@ -777,7 +808,11 @@ const FeatureGrid = memo(function FeatureGrid({ id, badge, title, subtitle, item
               </div>
               <div className={compact ? '' : 'mt-4'}>
                 <h3 className="text-lg font-black text-slate-950 dark:text-white">{item.title}</h3>
+<<<<<<< HEAD
                 <p className="reveal-up mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">{item.description}</p>
+=======
+                <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">{item.description}</p>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               </div>
             </article>
           );
@@ -787,7 +822,11 @@ const FeatureGrid = memo(function FeatureGrid({ id, badge, title, subtitle, item
   );
 });
 
+<<<<<<< HEAD
 const RoleCard = memo(function RoleCard({ role, onApply, theme }: {
+=======
+const RoleCard = memo(function RoleCard({ role, onApply, theme, index = 0 }: {
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   role: CareerRole;
   onApply: (roleId: string) => void;
   theme: 'light' | 'dark';
@@ -796,8 +835,18 @@ const RoleCard = memo(function RoleCard({ role, onApply, theme }: {
   const Icon = role.icon;
 
   return (
+<<<<<<< HEAD
     <article
       className="reveal-up group rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl dark:border-slate-800 dark:bg-slate-950 dark:hover:border-blue-900 sm:p-6">
+=======
+    <motion.article
+      initial="hidden"
+      whileInView="visible"
+      viewport={cardViewport}
+      variants={cardFadeUp}
+      transition={cardTransition(index)}
+      className="group rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl dark:border-slate-800 dark:bg-slate-950 dark:hover:border-blue-900 sm:p-6">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
       <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
         <div className="flex gap-4">
           <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-sm bg-blue-50 text-blue-600 transition group-hover:bg-blue-600 group-hover:text-white dark:bg-blue-500/10 dark:text-blue-200">
@@ -828,7 +877,11 @@ const RoleCard = memo(function RoleCard({ role, onApply, theme }: {
           </span>
         ))}
       </div>
+<<<<<<< HEAD
     </article>
+=======
+    </motion.article>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   );
 });
 
@@ -1070,7 +1123,10 @@ const ApplicationPanel = memo(function ApplicationPanel({
 });
 
 const CultureSection = memo(function CultureSection() {
+<<<<<<< HEAD
   const cardTransition = useCardTransition();
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   return (
     <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
       <SectionHeader
@@ -1079,11 +1135,24 @@ const CultureSection = memo(function CultureSection() {
         subtitle="Collaboration, innovation, and inclusion are how we build products and grow careers every day."
       />
       <div className="grid gap-6 md:grid-cols-3">
+<<<<<<< HEAD
         {CULTURE.map((pillar) => (
           <article
             key={pillar.id}
             className="reveal-up group overflow-hidden rounded-lg border border-slate-200 bg-white shadow-xl dark:border-slate-800 dark:bg-slate-950">
             <div className=" reveal-up relative h-44 overflow-hidden">
+=======
+        {CULTURE.map((pillar, pillarIdx) => (
+          <motion.article
+            key={pillar.id}
+            initial="hidden"
+            whileInView="visible"
+            viewport={cardViewport}
+            variants={cardFadeUp}
+            transition={cardTransition(pillarIdx)}
+            className="group overflow-hidden rounded-lg border border-slate-200 bg-white shadow-xl dark:border-slate-800 dark:bg-slate-950">
+            <div className="relative h-44 overflow-hidden">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               <img
                 src={enhanceImageUrl(pillar.image, { width: 720, height: 480, quality: 90 })}
                 srcSet={enhancedSrcSet(pillar.image, [360, 540, 720, 960], { height: 480, quality: 90 })}
@@ -1103,7 +1172,11 @@ const CultureSection = memo(function CultureSection() {
               <h3 className="text-lg font-black text-slate-950 dark:text-white">{pillar.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">{pillar.description}</p>
             </div>
+<<<<<<< HEAD
           </article>
+=======
+          </motion.article>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
         ))}
       </div>
     </div>
@@ -1112,7 +1185,11 @@ const CultureSection = memo(function CultureSection() {
 
 const HiringProcessSection = memo(function HiringProcessSection() {
   return (
+<<<<<<< HEAD
     <div className="reveal-up mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+=======
+    <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
       <SectionHeader
         badge="Hiring Process"
         title="Application Process Timeline"
@@ -1120,14 +1197,29 @@ const HiringProcessSection = memo(function HiringProcessSection() {
       />
       <ol className="mx-auto grid max-w-5xl gap-4 md:grid-cols-2 lg:grid-cols-3">
         {APPLICATION_TIMELINE.map(([title, description], index) => (
+<<<<<<< HEAD
           <li
             key={title}
             className="reveal rounded-lg border border-slate-200 bg-white p-5 shadow-xl dark:border-slate-800 dark:bg-slate-950"
+=======
+          <motion.li
+            key={title}
+            initial="hidden"
+            whileInView="visible"
+            viewport={cardViewport}
+            variants={cardFadeUp}
+            transition={cardTransition(index)}
+            className="rounded-lg border border-slate-200 bg-white p-5 shadow-xl dark:border-slate-800 dark:bg-slate-950"
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           >
             <span className="flex h-9 w-9 items-center justify-center rounded-sm bg-[#6d28d9] text-xs font-black text-white">{index + 1}</span>
             <h3 className="mt-4 text-lg font-black text-slate-950 dark:text-white">{title}</h3>
             <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">{description}</p>
+<<<<<<< HEAD
           </li>
+=======
+          </motion.li>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
         ))}
       </ol>
     </div>
@@ -1142,6 +1234,7 @@ const TimelineSection = memo(function TimelineSection() {
         title="Why Join MaVionix"
         subtitle="People grow fastest when they work on real products, receive direct mentorship, and can experiment with modern technology."
       />
+<<<<<<< HEAD
       <div className=" reveal-up grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {WHY_JOIN.map((item) => {
           const Icon = item.icon;
@@ -1149,13 +1242,31 @@ const TimelineSection = memo(function TimelineSection() {
             <article
               key={item.id}
               className="reveal rounded-lg border border-slate-200 bg-white p-5 shadow-xl transition hover:-translate-y-1 hover:shadow-2xl dark:border-slate-800 dark:bg-slate-950"
+=======
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {WHY_JOIN.map((item, whyIdx) => {
+          const Icon = item.icon;
+          return (
+            <motion.article
+              key={item.id}
+              initial="hidden"
+              whileInView="visible"
+              viewport={cardViewport}
+              variants={cardFadeUp}
+              transition={cardTransition(whyIdx)}
+              className="rounded-lg border border-slate-200 bg-white p-5 shadow-xl transition hover:-translate-y-1 hover:shadow-2xl dark:border-slate-800 dark:bg-slate-950"
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             >
               <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-sm bg-blue-50 text-blue-600 dark:bg-blue-950/30 dark:text-blue-300">
                 <Icon size={20} />
               </div>
               <h3 className="text-lg font-black text-slate-950 dark:text-white">{item.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">{item.description}</p>
+<<<<<<< HEAD
             </article>
+=======
+            </motion.article>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           );
         })}
       </div>
@@ -1164,24 +1275,46 @@ const TimelineSection = memo(function TimelineSection() {
 });
 
 const TestimonialsAndFaq = memo(function TestimonialsAndFaq() {
+<<<<<<< HEAD
   const cardTransition = useCardTransition();
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   return (
     <div className="mx-auto grid max-w-7xl gap-8 px-4 py-16 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
       <div>
         <SectionHeader badge="Team Stories" title="Growth in Their Words" subtitle="A snapshot of how people grow through real ownership at MaVionix." />
         <div className="space-y-4">
+<<<<<<< HEAD
           {TESTIMONIALS.map((item) => (
             <article
               key={item.name}
               className="reveal rounded-lg border border-slate-200 bg-white p-5 shadow-xl dark:border-slate-800 dark:bg-slate-950"
+=======
+          {TESTIMONIALS.map((item, testIdx) => (
+            <motion.article
+              key={item.name}
+              initial="hidden"
+              whileInView="visible"
+              viewport={cardViewport}
+              variants={cardFadeUp}
+              transition={cardTransition(testIdx)}
+              className="rounded-lg border border-slate-200 bg-white p-5 shadow-xl dark:border-slate-800 dark:bg-slate-950"
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             >
               <div className="mb-3 flex gap-1 text-amber-500">
                 {Array.from({ length: 5 }).map((_, index) => <Star key={index} size={14} fill="currentColor" />)}
               </div>
+<<<<<<< HEAD
               <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">&ldquo;{item.quote}&rdquo;</p>
               <p className="mt-4 text-sm font-black text-slate-950 dark:text-white">{item.name}</p>
               <p className="text-xs font-bold text-blue-600">{item.role}</p>
             </article>
+=======
+              <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">"{item.quote}"</p>
+              <p className="mt-4 text-sm font-black text-slate-950 dark:text-white">{item.name}</p>
+              <p className="text-xs font-bold text-blue-600">{item.role}</p>
+            </motion.article>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           ))}
         </div>
       </div>
@@ -1189,6 +1322,7 @@ const TestimonialsAndFaq = memo(function TestimonialsAndFaq() {
       <div>
         <SectionHeader badge="FAQ" title="Careers Questions" subtitle="Answers for candidates, interns, and applicants." />
         <div className="space-y-4">
+<<<<<<< HEAD
           {CAREERS_FAQ.map((item) => (
             <details
               key={item.question}
@@ -1197,6 +1331,21 @@ const TestimonialsAndFaq = memo(function TestimonialsAndFaq() {
               <summary className="cursor-pointer text-base font-black text-slate-950 dark:text-white">{item.question}</summary>
               <p className="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">{item.answer}</p>
             </details>
+=======
+          {CAREERS_FAQ.map((item, faqIdx) => (
+            <motion.details
+              key={item.question}
+              initial="hidden"
+              whileInView="visible"
+              viewport={cardViewport}
+              variants={cardFadeUp}
+              transition={cardTransition(faqIdx)}
+              className="rounded-lg border border-slate-200 bg-white p-5 shadow-xl dark:border-slate-800 dark:bg-slate-950"
+            >
+              <summary className="cursor-pointer text-base font-black text-slate-950 dark:text-white">{item.question}</summary>
+              <p className="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">{item.answer}</p>
+            </motion.details>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           ))}
         </div>
       </div>

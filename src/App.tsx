@@ -5,7 +5,10 @@ import Footer from './components/Footer';
 import HomeSection from './components/HomeSection';
 import AboutSection from './components/AboutSection';
 import ServicesSection from './components/ServicesSection';
+<<<<<<< HEAD
 import ProductSection from './components/ProductSection';
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 import FAQSection from './components/FAQSection';
 import ContactSection from './components/ContactSection';
 import BlogSection from './components/BlogSection';
@@ -17,7 +20,10 @@ import IndustriesSection from './components/IndustriesSection';
 import CookieConsent from "./components/CookieConsent";
 import CookiePolicy from '@/public/Pages/CookiePolicy';
 import TermsOfEngagement from '@/public/Pages/TermsOfEngagement';
+<<<<<<< HEAD
 import TermsAndConditions from '@/public/Pages/TermsAndConditions';
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 import PrivacyPrinciples from '@/public/Pages/PrivacyPrinciples';
 import ProfessionalDisclaimer from '@/public/Pages/ProfessionalDisclaimer';
 
@@ -25,7 +31,11 @@ import ProfessionalDisclaimer from '@/public/Pages/ProfessionalDisclaimer';
 const AIAssistant = React.lazy(() => import('./components/AIAssistant'));
 
 type ThemeMode = 'light' | 'dark';
+<<<<<<< HEAD
 const VALID_VIEWS = new Set(['home', 'product', 'about', 'services', 'industries', 'portfolio', 'blog', 'careers', 'achievements', 'faq', 'whitepaper', 'contact', 'cookie-policy', 'terms-of-engagement','terms-and-conditions', 'privacy-principles', 'professional-disclaimer']);
+=======
+const VALID_VIEWS = new Set(['home', 'about', 'services', 'industries', 'portfolio', 'blog', 'careers', 'achievements', 'faq', 'whitepaper', 'contact', 'cookie-policy', 'terms-of-engagement', 'privacy-principles', 'professional-disclaimer']);
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
 const getViewFromHash = () => {
   if (typeof window === 'undefined') return 'home';
@@ -41,6 +51,7 @@ const getIndustrySlugFromHash = () => {
   return view === 'industries' && slug ? slug : null;
 };
 
+<<<<<<< HEAD
 const getProductSlugFromHash = () => {
   if (typeof window === 'undefined') return null;
   const hashView = window.location.hash.replace(/^#/, '');
@@ -48,6 +59,8 @@ const getProductSlugFromHash = () => {
   return view === 'product' && slug ? slug : null;
 };
 
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 export default function App() {
   const [currentView, setCurrentView] = useState<string>(getViewFromHash);
   const [theme, setTheme] = useState<ThemeMode>(() => {
@@ -70,7 +83,10 @@ export default function App() {
     notes?: string;
   } | null>(null);
   const [industrySlug, setIndustrySlug] = useState<string | null>(null);
+<<<<<<< HEAD
   const [productSlug, setProductSlug] = useState<string | null>(getProductSlugFromHash);
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   const [serviceCategory, setServiceCategory] = useState<string | null>(null);
 
   // Sync theme class to document document element
@@ -85,7 +101,10 @@ export default function App() {
     const syncViewFromHash = () => {
       setCurrentView(getViewFromHash());
       setIndustrySlug(getIndustrySlugFromHash());
+<<<<<<< HEAD
       setProductSlug(getProductSlugFromHash());
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     };
 
     window.addEventListener('hashchange', syncViewFromHash);
@@ -101,9 +120,14 @@ export default function App() {
     setCurrentView(nextView);
     setIndustrySlug(nextView === 'industries' ? (slug || null) : null);
     setServiceCategory(nextView === 'services' ? (slug || null) : null);
+<<<<<<< HEAD
     setProductSlug(nextView === 'product' ? (slug || null) : null);
 
     const nextHash = slug && (nextView === 'industries' || nextView === 'product') ? `#${nextView}/${slug}` : `#${nextView}`;
+=======
+
+    const nextHash = nextView === 'industries' && slug ? `#industries/${slug}` : `#${nextView}`;
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     if (window.location.hash !== nextHash) {
       window.history.pushState(null, '', nextHash);
     }
@@ -118,7 +142,11 @@ export default function App() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'auto' });
+<<<<<<< HEAD
   }, [currentView, industrySlug, productSlug]);
+=======
+  }, [currentView, industrySlug]);
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
   const handlePreSelectSubService = (subName: string, mainName: string, customBudget?: string, notes?: string) => {
     setBookingPreset({
@@ -133,8 +161,11 @@ export default function App() {
   // View routing switcher
   const renderActiveSection = () => {
     switch (currentView) {
+<<<<<<< HEAD
       case 'product':
         return <ProductSection onViewChange={handleViewChange} activeSlug={productSlug} />;
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
       case 'about':
         return <AboutSection onViewChange={handleViewChange} />;
       case 'services':
@@ -171,8 +202,11 @@ export default function App() {
         return <CookiePolicy onViewChange={handleViewChange} />;
       case 'terms-of-engagement':
         return <TermsOfEngagement onViewChange={handleViewChange} />;
+<<<<<<< HEAD
         case 'terms-and-conditions':
         return <TermsAndConditions onViewChange={handleViewChange} />;
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
       case 'privacy-principles':
         return <PrivacyPrinciples onViewChange={handleViewChange} />;
       case 'professional-disclaimer':
@@ -206,7 +240,11 @@ export default function App() {
         <main id="main-content" className="flex-grow overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.div
+<<<<<<< HEAD
               key={currentView === 'product' ? `product-${productSlug || 'overview'}` : currentView}
+=======
+              key={currentView}
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}

@@ -2,7 +2,11 @@ import type { ComponentType, ReactNode } from 'react';
 import { ArrowRight, BadgeCheck, BarChart3, Bot, Building2, ChevronLeft, Factory, HeartPulse, Layers3, Rocket, ShieldCheck, Sparkles, Store, Truck, Users } from 'lucide-react';
 import { motion } from 'motion/react';
 import PageHero from './ui/PageHero';
+<<<<<<< HEAD
 import { cardFadeHorizontal, cardFadeHorizontalScale, cardViewport, useCardTransition } from '../utils/animations';
+=======
+import { cardFadeUp, cardFadeUpScale, cardViewport, cardTransition } from '../utils/animations';
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
 type IndustryId = 'hospitality-tourism' | 'e-commerce' | 'healthcare' | 'startup-saas' | 'real-estate' | 'manufacturing-industrial' | 'logistics-supply-chain' | 'professional-services' | 'retail-consumer' | 'ai-automation';
 
@@ -351,7 +355,11 @@ function IndustryHero({ onViewChange }: { onViewChange: (view: string, slug?: st
       description="This section now works like a proper industry hub. Browse the sectors below, open a dedicated page for each one, and explore focused AI, automation, and software capabilities that feel native to the MaVionix brand."
       actions={
         <>
+<<<<<<< HEAD
         <div className="mt-8 flex flex-row items-center justify-center gap-3 sm:flex-row sm:items-start sm:justify-start">
+=======
+        <div className="mt-8 flex flex-row flex-wrap items-center justify-center gap-3 sm:flex-row sm:items-start sm:justify-start">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           <button onClick={() => onViewChange('contact')} className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-5 py-3 text-xs font-black uppercase tracking-wider text-white transition hover:-translate-y-0.5 hover:shadow-lg dark:#C800FF, dark:text-slate-950">
             Start a project
             <ArrowRight size={16} />
@@ -373,17 +381,28 @@ function IndustryHero({ onViewChange }: { onViewChange: (view: string, slug?: st
 }
 
 function IndustryLanding({ onViewChange }: { onViewChange: (view: string, slug?: string) => void }) {
+<<<<<<< HEAD
   const cardTransition = useCardTransition();
   return (
     <>
       <IndustryHero onViewChange={onViewChange} />
       <div className="reveal-up  mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+=======
+  return (
+    <>
+      <IndustryHero onViewChange={onViewChange} />
+      <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
         <SectionHeading
           eyebrow="Industries"
           title="Specialized solutions for the sectors you actually serve"
           text="These pages are designed to help visitors understand how MaVionix adapts its delivery approach per industry while still keeping the same design language and brand feel across the site."
         />
+<<<<<<< HEAD
         <div className="reveal-up  mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+=======
+        <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           {industryData.map((industry, index) => {
             const Icon = industry.icon;
             return (
@@ -393,6 +412,7 @@ function IndustryLanding({ onViewChange }: { onViewChange: (view: string, slug?:
                 initial="hidden"
                 whileInView="visible"
                 viewport={cardViewport}
+<<<<<<< HEAD
                 variants={cardFadeHorizontal}
                 transition={cardTransition(index)}
                 className="group rounded-2xl border border-slate-200 bg-white p-6 text-left shadow-sm transition-all hover:-translate-y-1 hover:shadow-[0_8px_32px_rgba(59,130,246,0.35)] dark:border-slate-900 dark:bg-slate-950 dark:hover:shadow-[0_8px_32px_rgba(59,130,246,0.35)]"
@@ -402,6 +422,17 @@ function IndustryLanding({ onViewChange }: { onViewChange: (view: string, slug?:
                     <Icon size={22}  />
                   </div>
                   <span className="reveal-up  rounded-full border border-purple-200 bg-purple-50 px-3 py-1 text-[10px] font-black uppercase tracking-wider text-purple-700 dark:border-purple-900/70 dark:bg-purple-950/30 dark:text-purple-300">
+=======
+                variants={cardFadeUp}
+                transition={cardTransition(index)}
+                className="group rounded-2xl border border-slate-200 bg-white p-6 text-left shadow-sm transition-all hover:-translate-y-1 hover:shadow-[0_8px_32px_rgba(59,130,246,0.35)] dark:border-slate-900 dark:bg-slate-950 dark:hover:shadow-[0_8px_32px_rgba(59,130,246,0.35)]"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-purple-50 text-purple-700 dark:bg-purple-950/40 dark:text-purple-300">
+                    <Icon size={22}  />
+                  </div>
+                  <span className="rounded-full border border-purple-200 bg-purple-50 px-3 py-1 text-[10px] font-black uppercase tracking-wider text-purple-700 dark:border-purple-900/70 dark:bg-purple-950/30 dark:text-purple-300">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                     Deep Dive
                   </span>
                 </div>
@@ -423,7 +454,10 @@ function IndustryLanding({ onViewChange }: { onViewChange: (view: string, slug?:
 
 function IndustryDetail({ industry, onViewChange }: { industry: IndustryItem; onViewChange: (view: string, slug?: string) => void }) {
   const Icon = industry.icon;
+<<<<<<< HEAD
   const cardTransition = useCardTransition();
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
   return (
     <div className="bg-white mt-3 text-slate-900 dark:bg-black dark:text-white">
@@ -450,7 +484,11 @@ function IndustryDetail({ industry, onViewChange }: { industry: IndustryItem; on
         stats={industry.stats}
         className="border-b-0 pb-0"
       >
+<<<<<<< HEAD
         <div className="reveal-up  mx-auto flex max-w-3xl justify-center">
+=======
+        <div className="mx-auto flex max-w-3xl justify-center">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           <button onClick={() => onViewChange('industries')} className="inline-flex items-center gap-2 text-sm font-black uppercase tracking-wider text-purple-700 dark:text-purple-300">
             <ChevronLeft size={16} />
             Back to industries
@@ -458,6 +496,7 @@ function IndustryDetail({ industry, onViewChange }: { industry: IndustryItem; on
         </div>
       </PageHero>
 
+<<<<<<< HEAD
       <div className="reveal-up  mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="reveal-up rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition-colors dark:border-transparent dark:bg-gradient-to-br dark:from-slate-950 dark:to-slate-800 dark:shadow-2xl">
           <div className="reveal-right flex items-center gap-2">
@@ -466,6 +505,16 @@ function IndustryDetail({ industry, onViewChange }: { industry: IndustryItem; on
           </div>
           <h2 className="reveal-up  mt-3 text-xl font-black text-slate-950 sm:text-2xl dark:text-white">What the data says about {industry.name}</h2>
           <ul className="reveal-up  mt-6 space-y-4">
+=======
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition-colors dark:border-transparent dark:bg-gradient-to-br dark:from-slate-950 dark:to-slate-800 dark:shadow-2xl">
+          <div className="flex items-center gap-2">
+            <BarChart3 size={16} className="text-purple-600 dark:text-purple-300" />
+            <p className="text-xs font-black uppercase tracking-[0.22em] text-purple-700 dark:text-purple-300">Industry research</p>
+          </div>
+          <h2 className="mt-3 text-xl font-black text-slate-950 sm:text-2xl dark:text-white">What the data says about {industry.name}</h2>
+          <ul className="mt-6 space-y-4">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             {industry.researchInsights.map((point) => (
               <li key={point} className="flex items-start gap-3 text-sm leading-6 text-slate-700 dark:text-slate-300">
                 <Sparkles size={15} className="mt-1 shrink-0 text-purple-600 dark:text-purple-300" />
@@ -474,15 +523,26 @@ function IndustryDetail({ industry, onViewChange }: { industry: IndustryItem; on
             ))}
           </ul>
           <p className="mt-6 border-t border-slate-100 pt-6 text-sm leading-7 text-slate-600 dark:border-white/10 dark:text-slate-400">
+<<<<<<< HEAD
             <span className="mr-2 text-xs font-black uppercase tracking-wide text-purple-700 dark:text-purple-300">Why it matters -</span>
+=======
+            <span className="mr-2 text-xs font-black uppercase tracking-wide text-purple-700 dark:text-purple-300">Why it matters —</span>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             {industry.positioningNote}
           </p>
         </div>
 
+<<<<<<< HEAD
         <div className="reveal-up  mt-6 grid gap-6 lg:grid-cols-2">
           <div className="reveal-left rounded-3xl border border-slate-200 bg-white p-8 shadow-sm dark:border-slate-900 dark:bg-slate-950">
             <p className="text-xs font-black uppercase tracking-[0.22em] text-purple-700 dark:text-purple-300">Pain points</p>
             <ul className="reveal-up  mt-5 space-y-3">
+=======
+        <div className="mt-6 grid gap-6 lg:grid-cols-2">
+          <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm dark:border-slate-900 dark:bg-slate-950">
+            <p className="text-xs font-black uppercase tracking-[0.22em] text-purple-700 dark:text-purple-300">Pain points</p>
+            <ul className="mt-5 space-y-3">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               {industry.painPoints.map((point) => (
                 <li key={point} className="flex items-start gap-3 text-sm font-semibold text-slate-800 dark:text-slate-200">
                   <ShieldCheck size={16} className="mt-0.5 shrink-0 text-purple-600 dark:text-purple-300" />
@@ -491,7 +551,11 @@ function IndustryDetail({ industry, onViewChange }: { industry: IndustryItem; on
               ))}
             </ul>
           </div>
+<<<<<<< HEAD
           <div className="reveal-right rounded-3xl border border-slate-200 bg-white p-8 shadow-sm dark:border-slate-900 dark:bg-slate-950">
+=======
+          <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm dark:border-slate-900 dark:bg-slate-950">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             <p className="text-xs font-black uppercase tracking-[0.22em] text-purple-700 dark:text-purple-300">Solutions</p>
             <ul className="mt-5 space-y-3">
               {industry.solutions.map((point) => (
@@ -505,18 +569,30 @@ function IndustryDetail({ industry, onViewChange }: { industry: IndustryItem; on
         </div>
 
             {/* changes3565 */}
+<<<<<<< HEAD
         <div className="reveal-right mt-6 rounded-3xl bg-white border border-slate-200 p-8 text-slate-900 shadow-xl transition-colors dark:bg-gradient-to-br dark:from-slate-950 dark:to-slate-800 dark:text-white dark:border-transparent dark:shadow-2xl">
           <p className="text-xs font-black uppercase tracking-[0.22em] text-slate-500 dark:text-white/70">
             Outcomes
           </p>
           <div className="reveal-up mt-5 grid gap-4 md:grid-cols-3">
+=======
+        <div className="mt-6 rounded-3xl bg-white border border-slate-200 p-8 text-slate-900 shadow-xl transition-colors dark:bg-gradient-to-br dark:from-slate-950 dark:to-slate-800 dark:text-white dark:border-transparent dark:shadow-2xl">
+          <p className="text-xs font-black uppercase tracking-[0.22em] text-slate-500 dark:text-white/70">
+            Outcomes
+          </p>
+          <div className="mt-5 grid gap-4 md:grid-cols-3">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             {industry.outcomes.map((item, index) => (
               <motion.div
                 key={item}
                 initial="hidden"
                 whileInView="visible"
                 viewport={cardViewport}
+<<<<<<< HEAD
                 variants={cardFadeHorizontalScale}
+=======
+                variants={cardFadeUpScale}
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                 transition={cardTransition(index)}
                 className="rounded-2xl border border-slate-100 bg-slate-50 p-5 transition-colors dark:border-white/10 dark:bg-white/5"
               >
@@ -530,14 +606,22 @@ function IndustryDetail({ industry, onViewChange }: { industry: IndustryItem; on
           </div>
         </div>
 
+<<<<<<< HEAD
         <div className="reveal-down mt-6 grid gap-4 md:grid-cols-3">
+=======
+        <div className="mt-6 grid gap-4 md:grid-cols-3">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           {industry.deliverables.map((item, index) => (
             <motion.div
               key={item}
               initial="hidden"
               whileInView="visible"
               viewport={cardViewport}
+<<<<<<< HEAD
               variants={cardFadeHorizontal}
+=======
+              variants={cardFadeUp}
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               transition={cardTransition(index)}
               className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-900 dark:bg-slate-950"
             >
@@ -547,7 +631,11 @@ function IndustryDetail({ industry, onViewChange }: { industry: IndustryItem; on
           ))}
         </div>
 
+<<<<<<< HEAD
         <div className="reveal-up  mt-16 grid gap-6 lg:grid-cols-[1fr_0.95fr]">
+=======
+        <div className="mt-16 grid gap-6 lg:grid-cols-[1fr_0.95fr]">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           <div>
             <SectionHeading
               eyebrow="FAQ"
@@ -568,24 +656,40 @@ function IndustryDetail({ industry, onViewChange }: { industry: IndustryItem; on
                 initial="hidden"
                 whileInView="visible"
                 viewport={cardViewport}
+<<<<<<< HEAD
                 variants={cardFadeHorizontal}
                 transition={cardTransition(index)}
                 className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-900 dark:bg-slate-950"
               >
                 <summary className="reveal-up  cursor-pointer list-none text-sm font-black text-slate-900 dark:text-white">{faq.question}</summary>
+=======
+                variants={cardFadeUp}
+                transition={cardTransition(index)}
+                className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-900 dark:bg-slate-950"
+              >
+                <summary className="cursor-pointer list-none text-sm font-black text-slate-900 dark:text-white">{faq.question}</summary>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                 <p className="mt-3 text-sm leading-6 text-slate-700 dark:text-slate-300">{faq.answer}</p>
               </motion.details>
             ))}
           </div>
         </div>
 
+<<<<<<< HEAD
         <div className="reveal-up mt-16 rounded-3xl border border-slate-200 bg-slate-50 p-8 dark:border-slate-900 dark:bg-slate-950">
+=======
+        <div className="mt-16 rounded-3xl border border-slate-200 bg-slate-50 p-8 dark:border-slate-900 dark:bg-slate-950">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           <p className="text-xs font-black uppercase tracking-[0.22em] text-purple-700 dark:text-purple-300">Ready when you are</p>
           <h2 className="mt-3 text-2xl font-black sm:text-3xl">Need this industry adapted to your exact business model?</h2>
           <p className="mt-4 max-w-3xl text-sm leading-7 text-slate-600 dark:text-slate-400">
             We can tailor the messaging, proof points, and feature set for your market while preserving the same premium theme and turning this into a stronger lead-generation page.
           </p>
+<<<<<<< HEAD
           <div className="mt-6 flex  gap-4">
+=======
+          <div className="mt-6 flex flex-wrap gap-4">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             <button onClick={() => onViewChange('contact')} className="inline-flex items-center gap-2 rounded-sm bg-slate-900 px-6 py-3 text-sm font-black uppercase tracking-wider text-white dark:#C800FF, dark:text-slate-950">
               Discuss project
               <ArrowRight size={16} />

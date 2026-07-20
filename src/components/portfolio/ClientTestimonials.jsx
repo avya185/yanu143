@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { motion } from 'motion/react';
 import { Star, Quote } from 'lucide-react';
 import { CLIENT_TESTIMONIALS } from '../../data/portfolio';
@@ -11,6 +12,16 @@ const ClientTestimonials = () => {
   const cardTransition = useCardTransition();
 
   return (
+=======
+import { Star, Quote } from 'lucide-react';
+import { CLIENT_TESTIMONIALS } from '../../data/portfolio';
+import SectionHeader from '../ui/SectionHeader';
+
+/**
+ * onials — Social proof from clients across service categories (blueprint Section 8).
+ */
+const ClientTestimonials = () => (
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   <section
     className="py-20 bg-slate-100 dark:bg-[#0a0814]"
     aria-labelledby="testimonials-heading"
@@ -24,6 +35,7 @@ const ClientTestimonials = () => {
       />
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+<<<<<<< HEAD
         {CLIENT_TESTIMONIALS.map((item, index) => (
           <motion.blockquote
             key={item.id}
@@ -32,6 +44,11 @@ const ClientTestimonials = () => {
             viewport={cardViewport}
             variants={cardFadeUp}
             transition={cardTransition(index)}
+=======
+        {CLIENT_TESTIMONIALS.map((item) => (
+          <blockquote
+            key={item.id}
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             className="relative rounded-2xl border border-slate-200 border-l-4 border-l-purple-500 bg-white p-6 dark:border-white/8 dark:border-l-purple-400 dark:bg-[#131020]"
           >
             <Quote className=" absolute top-4 right-4 h-8 w-8 text-purple-500/15 dark:text-amber-50" aria-hidden="true" />
@@ -49,12 +66,20 @@ const ClientTestimonials = () => {
                 {item.role}, {item.company}
               </p>
             </div>
+<<<<<<< HEAD
           </motion.blockquote>
+=======
+          </blockquote>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
         ))}
       </div>
     </div>
   </section>
+<<<<<<< HEAD
   );
 };
+=======
+);
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
 export default ClientTestimonials;

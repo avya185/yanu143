@@ -1,7 +1,11 @@
 import { useEffect, useState } from 'react';
 
 /**
+<<<<<<< HEAD
  * useReducedMotion -Detects system motion preferences and disables animations accordingly.
+=======
+ * useReducedMotion — Detects system motion preferences and disables animations accordingly.
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
  * Respects user's accessibility settings for animations.
  */
 export const useReducedMotion = () => {

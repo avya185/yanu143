@@ -7,10 +7,16 @@ import { useCurrency } from '../context/CurrencyContext';
 import { enhanceImageUrl, enhancedSrcSet } from '../utils/images';
 import PageHero from './ui/PageHero';
 import { Sparkles } from 'lucide-react';
+<<<<<<< HEAD
 import { cardFadeUp, cardViewport, useCardTransition } from '../utils/animations';
 
 export default function FAQSection() {
   const cardTransition = useCardTransition();
+=======
+import { cardFadeUp, cardViewport, cardTransition } from '../utils/animations';
+
+export default function FAQSection() {
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   const { translatePriceText } = useCurrency();
   // FAQ state
   const [searchQuery, setSearchQuery] = useState('');
@@ -49,6 +55,7 @@ export default function FAQSection() {
     }
 
     setFilteredFaqs(list);
+<<<<<<< HEAD
     // Only reset the expanded accordion item if the one currently open is no
     // longer part of the filtered results - previously this reset to item 0
     // on every single keystroke, which yanked the accordion open/closed
@@ -58,6 +65,9 @@ export default function FAQSection() {
       if (stillValid) return prevIndex;
       return list.length > 0 ? 0 : null;
     });
+=======
+    setExpandedFaqIndex(list.length > 0 ? 0 : null);
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   }, [searchQuery, activeCategory]);
 
   // Scroll to bottom of chat list
@@ -99,7 +109,11 @@ export default function FAQSection() {
         ...prev,
         { 
           role: 'assistant', 
+<<<<<<< HEAD
           content: data.text || "No response received. Please write us at mavionix360@gmail.com!",
+=======
+          content: data.text || "No response received. Please write us at contactmavionix@gmail.com!",
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           sources: data.sources || []
         }
       ]);
@@ -109,7 +123,11 @@ export default function FAQSection() {
       
       // Smart offline local fallback matching keyword parameters
       const lcQuery = queryText.toLowerCase();
+<<<<<<< HEAD
       let fallbackText = "I missed that connection. For direct guidance, please WhatsApp our support line at +91 78180 37404 or email mavionix360@gmail.com!";
+=======
+      let fallbackText = "I missed that connection. For direct guidance, please WhatsApp our support line at +91 78180 37404 or email contactmavionix@gmail.com!";
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
       
       if (lcQuery.includes("pricing") || lcQuery.includes("cost") || lcQuery.includes("budget") || lcQuery.includes("how much")) {
         fallbackText = "Our pricing maps around INR 4,999 for static landing pages, and customized AI vector chatbots around INR 14,999+. Retainers start at INR 1,999/mo. Submit our Contact Form to download exact scope cards.";
@@ -222,7 +240,11 @@ export default function FAQSection() {
             {/* Matched questions list card stack */}
             <div className="space-y-3.5">
               {filteredFaqs.length === 0 ? (
+<<<<<<< HEAD
                 <div className="reveal-right p-8 text-center bg-white dark:bg-[#0c0c14] border border-slate-200/50 dark:border-slate-900 rounded-sm">
+=======
+                <div className="p-8 text-center bg-white dark:bg-[#0c0c14] border border-slate-200/50 dark:border-slate-900 rounded-sm">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                   <HelpCircle size={32} className="text-slate-300 mx-auto mb-2" />
                   <p className="text-xs sm:text-sm text-slate-500 font-bold uppercase tracking-wider">No matching questions found in registry.</p>
                   <p className="text-xs text-slate-400 mt-1">Try other simple keyword prompts or write to our AI Assistant helper on the left.</p>
@@ -238,7 +260,11 @@ export default function FAQSection() {
                       viewport={cardViewport}
                       variants={cardFadeUp}
                       transition={cardTransition(fIdx)}
+<<<<<<< HEAD
                       className={`border border-slate-200/50 dark:border-slate-900 rounded-sm bg-white dark:bg-[#0c0c14] reveal-right overflow-hidden transition-all duration-350 ${
+=======
+                      className={`border border-slate-200/50 dark:border-slate-900 rounded-sm bg-white dark:bg-[#0c0c14] overflow-hidden transition-all duration-350 ${
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                         isExpanded ? 'shadow-sm border-blue-500/20' : 'hover:border-slate-300 dark:hover:border-slate-800'
                       }`}
                     >

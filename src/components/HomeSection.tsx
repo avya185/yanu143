@@ -4,7 +4,11 @@ import { Globe, MessageSquare, Palette, Cpu, PenTool, Briefcase, ShieldCheck, Aw
 import { motion, AnimatePresence } from 'motion/react';
 import { useCurrency } from '../context/CurrencyContext';
 import { enhanceImageUrl, enhancedSrcSet } from '../utils/images';
+<<<<<<< HEAD
 import { cardFadeUp, cardFadeUpScale, cardViewport, useCardTransition } from '../utils/animations';
+=======
+import { cardFadeUp, cardFadeUpScale, cardViewport, cardTransition } from '../utils/animations';
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
 interface HomeSectionProps {
   theme: 'light' | 'dark';
@@ -13,7 +17,10 @@ interface HomeSectionProps {
 }
 export default function HomeSection({ theme, onViewChange, onBookingSubmit }: HomeSectionProps) {
   const { selectedCurrency, convertAmount, formatAmount } = useCurrency();
+<<<<<<< HEAD
   const cardTransition = useCardTransition();
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
   // Interactive Widgets State
   const [activeBlueprintStep, setActiveBlueprintStep] = useState(0);
@@ -224,7 +231,11 @@ export default function HomeSection({ theme, onViewChange, onBookingSubmit }: Ho
 <div className="absolute top-[10%] right-[-5%] h-[450px] w-[450px] rounded-full bg-purple-200/25 dark:bg-purple-500/10 blur-[120px] pointer-events-none z-0"></div>
 <div className="absolute top-[40%] left-[-10%] h-[400px] w-[400px] rounded-full bg-purple-100/30 dark:bg-blue-500/10 blur-[110px] pointer-events-none z-0"></div>
       <div className="relative z-10 mx-auto max-w-7xl">
+<<<<<<< HEAD
           <div className=" reveal-down grid items-start gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 xl:gap-14">
+=======
+          <div className="grid items-start gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 xl:gap-14">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
@@ -244,7 +255,11 @@ export default function HomeSection({ theme, onViewChange, onBookingSubmit }: Ho
                 MaVionix helps startups and established service businesses accelerate operations. We deploy custom websites, conversational support chatbots, workflow automations, and live dashboards that cut out manual tasks and turn your concepts into self-running operational pipelines.
               </p>
 
+<<<<<<< HEAD
               <div className="mt-8 flex flex-row items-center justify-center gap-3 sm:flex-row sm:items-start sm:justify-start">
+=======
+              <div className="mt-8 flex flex-row flex-wrap items-center justify-center gap-3 sm:flex-row sm:items-start sm:justify-start">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                 <button onClick={() => onViewChange('services')} className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-5 py-3 text-xs font-black uppercase tracking-wider text-white transition hover:-translate-y-0.5 hover:shadow-lg dark:bg-#6d28d9  dark:text-slate-950">
                   Explore services  
                   <ArrowRight size={16} color={theme === 'light' ? 'white' : 'white'} />
@@ -484,11 +499,18 @@ export default function HomeSection({ theme, onViewChange, onBookingSubmit }: Ho
             {SERVICES.map((cat, idx) => (
               <motion.div
                 key={cat.label}
+<<<<<<< HEAD
                 initial="hidden"
                 whileInView="visible"
                 viewport={cardViewport}
                 variants={cardFadeUp}
                 transition={cardTransition(idx)}
+=======
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.6, delay: (idx % 3) * 0.12, ease: [0.16, 1, 0.3, 1] }}
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                 className="relative group min-h-[260px] p-6 bg-white dark:bg-[#0c0c14] border border-slate-200/50 dark:border-slate-900 rounded-sm shadow-sm transition-all duration-300 hover:shadow-md hover:border-blue-500/25 hover:-translate-y-1"
               >
                 <div className="space-y-6">
@@ -1050,7 +1072,11 @@ export default function HomeSection({ theme, onViewChange, onBookingSubmit }: Ho
                     ))}
                   </div>
                   <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 italic leading-relaxed">
+<<<<<<< HEAD
                     &ldquo;{test.content}&rdquo;
+=======
+                    "{test.content}"
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                   </p>
                 </div>
 

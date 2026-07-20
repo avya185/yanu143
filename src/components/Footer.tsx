@@ -1,5 +1,9 @@
 import React from 'react';
+<<<<<<< HEAD
 import { Mail, Phone, MapPin, Globe, Facebook, Instagram, Linkedin, Twitter, ArrowUpRight, ShieldCheck, BadgeCheck, ExternalLink } from 'lucide-react';
+=======
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Twitter, ArrowUpRight, ShieldCheck, BadgeCheck, ExternalLink } from 'lucide-react';
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
 interface FooterProps {
   onViewChange: (view: string) => void;
@@ -18,12 +22,20 @@ export default function Footer({ onViewChange }: FooterProps) {
       {/* Decorative subtle background waves */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#6d28d9_1.5px,transparent_1.5px)] [background-size:20px_20px] z-0"></div>
 
+<<<<<<< HEAD
       <div className="reveal-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+=======
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
         {/* Footer Call-To-Action Banner: Centered premium cards with elegant backdrop accents */}
         <div className="relative bg-white , border border-[#ebdff7] rounded-lg p-8 sm:p-10 text-center mb-16 shadow-xl max-w-4xl mx-auto overflow-hidden group">
           <div className="absolute top-0 left-0 w-full h-[3.5px] bg-gradient-to-r from-purple-500 to-indigo-600"></div>
 
+<<<<<<< HEAD
           <div className="reveal-up relative z-10">
+=======
+          <div className="relative z-10">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-purple-50 dark:bg-[#6d28d9] text-black text-[10px] font-bold uppercase tracking-wider rounded-full mb-4">
               <ShieldCheck size={12} className="text-black" /> Secure Business Consulting
             </span>
@@ -46,7 +58,11 @@ export default function Footer({ onViewChange }: FooterProps) {
         </div>
 
         {/* Master Columns */}
+<<<<<<< HEAD
         <div className="reveal-up grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+=======
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           {/* Brand Info */}
           <div className="space-y-5">
             <button onClick={() => handleLinkClick('home')} className="flex items-center gap-3 focus:outline-none">
@@ -136,6 +152,7 @@ export default function Footer({ onViewChange }: FooterProps) {
                   FAQ
                 </button>
               </li>
+<<<<<<< HEAD
                <li>
                 <button onClick={() => handleLinkClick('achievements')} className="text-[#8c829f] hover:text-white font-medium transition-colors">
                   Achievements
@@ -146,6 +163,8 @@ export default function Footer({ onViewChange }: FooterProps) {
                 </button>
               </li>
               
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             </ul>
           </div>
 
@@ -185,6 +204,7 @@ export default function Footer({ onViewChange }: FooterProps) {
           <div className="space-y-4 text-xs sm:text-sm">
             <h4 className="text-xs font-extrabold uppercase tracking-widest text-purple-700 mb-5 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-8 after:h-0.5 after:bg-purple-600">Contact Gateway</h4>
             <div className="flex items-start gap-3">
+<<<<<<< HEAD
               <Globe size={16} className="text-purple-600 mt-1 flex-shrink-0" />
               <div>
                 <div className="text-[10px] text-slate-400 font-extrabold uppercase">Website</div>
@@ -199,15 +219,28 @@ export default function Footer({ onViewChange }: FooterProps) {
                 <div className="text-[10px] text-slate-400 font-extrabold uppercase">Direct Email</div>
                 <a href="mailto:mavionix360@gmail.com" className="hover:text-white transition-colors text-[#8c829f] font-bold">
                   mavionix360@gmail.com
+=======
+              <Mail size={16} className="text-purple-600 mt-1 flex-shrink-0" />
+              <div>
+                <div className="text-[10px] text-slate-400 font-extrabold uppercase">Direct Email</div>
+                <a href="mailto:contactmavionix@gmail.com" className="hover:text-white transition-colors text-[#8c829f] font-bold">
+                  contactmavionix@gmail.com
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                 </a>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <Phone size={16} className="text-purple-600 mt-1 flex-shrink-0" />
               <div>
+<<<<<<< HEAD
                 <div className="text-[10px] text-slate-400 font-extrabold uppercase">Contact No.</div>
                 <a href="tel:+917818037404" className="hover:text-white transition-colors text-[#8c829f] font-bold">
                   +91 70651-32579
+=======
+                <div className="text-[10px] text-slate-400 font-extrabold uppercase">WhatsApp Hotline</div>
+                <a href="tel:+917818037404" className="hover:text-white transition-colors text-[#8c829f] font-bold">
+                  +91 78180 37404
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                 </a>
               </div>
             </div>
@@ -215,8 +248,13 @@ export default function Footer({ onViewChange }: FooterProps) {
               <MapPin size={16} className="text-purple-600 mt-1 flex-shrink-0" />
               <div>
                 <div className="text-[10px] text-slate-400 font-extrabold uppercase">Registered Locations</div>
+<<<<<<< HEAD
                 <span className="text-[#8c829f] font-medium text-xs block">HQ: A-1/86, Sector-17,<br></br> Rohini, Delhi - 110089</span>
                 <span className="text-[#8c829f] font-medium text-xs block">Office: Modinagar,<br></br> Ghaziabad - 201204</span>
+=======
+                <span className="text-[#8c829f] font-medium text-xs block">HQ: Rohini, Delhi - 110085</span>
+                <span className="text-[#8c829f] font-medium text-xs block">Office: Modinagar, Ghaziabad - 201204</span>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               </div>
             </div>
           </div>
@@ -272,11 +310,16 @@ export default function Footer({ onViewChange }: FooterProps) {
         <div className="mt-6 flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5 border-t border-[#ebdff7] pt-6 text-xs text-slate-400 font-medium">
           <button onClick={() => handleLinkClick('terms-of-engagement')} className="hover:text-[#6d28d9] transition-colors">Terms of Engagement</button>
           <span>&middot;</span>
+<<<<<<< HEAD
          <button onClick={() => handleLinkClick('terms-and-conditions')} className="hover:text-[#6d28d9] transition-colors">Terms And Conditions</button>
           <span>&middot;</span>
           <button onClick={() => handleLinkClick('privacy-principles')} className="hover:text-[#6d28d9] transition-colors">Privacy Principles</button>
           <span>&middot;</span>
           
+=======
+          <button onClick={() => handleLinkClick('privacy-principles')} className="hover:text-[#6d28d9] transition-colors">Privacy Principles</button>
+          <span>&middot;</span>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           <button onClick={() => handleLinkClick('professional-disclaimer')} className="hover:text-[#6d28d9] transition-colors">Professional Disclaimer</button>
         </div>
       </div>

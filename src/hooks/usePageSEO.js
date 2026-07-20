@@ -1,7 +1,11 @@
 import { useEffect } from 'react';
 
 /**
+<<<<<<< HEAD
  * usePageSEO -Updates document title and meta tags for the portfolio SPA.
+=======
+ * usePageSEO — Updates document title and meta tags for the portfolio SPA.
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
  */
 export function usePageSEO({ title, description, canonical, ogImage }) {
   useEffect(() => {

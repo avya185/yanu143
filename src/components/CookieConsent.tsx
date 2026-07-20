@@ -98,7 +98,11 @@ export default function CookieConsent({ onViewChange }: CookieConsentProps) {
               </div>
             )}
 
+<<<<<<< HEAD
             <div className="flex gap-2">
+=======
+            <div className="flex flex-wrap gap-2">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               <button
                 onClick={acceptAll}
                 className="px-3 py-1.5 rounded-lg text-white text-xs sm:text-sm font-medium dark:bg-[#6d28d9] bg-slate-950 hover:opacity-90"

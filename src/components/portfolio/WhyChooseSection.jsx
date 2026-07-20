@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { motion } from 'motion/react';
 import { WHY_CHOOSE_ITEMS } from '../../data/portfolio';
 import SectionHeader from '../ui/SectionHeader';
@@ -10,6 +11,15 @@ const WhyChooseSection = () => {
   const cardTransition = useCardTransition();
 
   return (
+=======
+import { WHY_CHOOSE_ITEMS } from '../../data/portfolio';
+import SectionHeader from '../ui/SectionHeader';
+
+/**
+ * WhyChooseSection — MaVionix value propositions (blueprint Section 6).
+ */
+const WhyChooseSection = () => (
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   <section className="py-20 bg-white dark:bg-[#040409]" aria-labelledby="why-choose-heading">
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <SectionHeader
@@ -20,6 +30,7 @@ const WhyChooseSection = () => {
       />
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+<<<<<<< HEAD
         {WHY_CHOOSE_ITEMS.map((item, index) => (
           <motion.article
             key={item.id}
@@ -28,6 +39,11 @@ const WhyChooseSection = () => {
             viewport={cardViewport}
             variants={cardFadeUp}
             transition={cardTransition(index)}
+=======
+        {WHY_CHOOSE_ITEMS.map((item) => (
+          <article
+            key={item.id}
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             className="rounded-2xl border border-slate-200 p-6 dark:border-white/8 dark:bg-white/[0.02]"
           >
             <span className="text-sm font-black text-blue-600 dark:text-blue-400">{item.number}</span>
@@ -37,12 +53,20 @@ const WhyChooseSection = () => {
               <span className="font-semibold text-slate-700 dark:text-slate-300">Purpose: </span>
               {item.purpose}
             </p>
+<<<<<<< HEAD
           </motion.article>
+=======
+          </article>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
         ))}
       </div>
     </div>
   </section>
+<<<<<<< HEAD
   );
 };
+=======
+);
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
 export default WhyChooseSection;

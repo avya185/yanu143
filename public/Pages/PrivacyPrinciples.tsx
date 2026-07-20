@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import {
 //   ShieldCheck,
 //   Database,
@@ -199,6 +200,8 @@
 //     </svg>
 //   );
 // }
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 import {
   ShieldCheck,
   Database,
@@ -208,14 +211,27 @@ import {
   UserCheck,
   Mail,
   Cookie,
+<<<<<<< HEAD
   AlertCircle,
   Server
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 } from "lucide-react";
 
 type PrivacyPrinciplesProps = {
   onViewChange: (view: string) => void;
 };
 
+<<<<<<< HEAD
+=======
+const dataPoints = [
+  { icon: Database, label: "Contact Details", desc: "Name, email, phone number, and company details you share via our forms." },
+  { icon: Eye, label: "Usage Data", desc: "Pages visited, time on site, and device/browser information collected automatically." },
+  { icon: Share2, label: "Communication Records", desc: "Emails, WhatsApp messages, and call notes exchanged during an engagement." },
+  { icon: UserCheck, label: "Application Data", desc: "Resumes and application details submitted through our careers page." },
+];
+
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 export default function PrivacyPrinciples({ onViewChange }: PrivacyPrinciplesProps) {
   return (
     <main className="bg-white text-slate-800 dark:bg-black dark:text-slate-200 mt-10">
@@ -233,6 +249,7 @@ export default function PrivacyPrinciples({ onViewChange }: PrivacyPrinciplesPro
         <div className="mt-5 mb-5 relative z-10 mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-6 lg:grid-cols-2 lg:px-0">
           <div>
             <h1 className="text-4xl font-bold text-[#6d28d9] sm:text-5xl">
+<<<<<<< HEAD
               Privacy & Confidentiality
             </h1>
             <div className="mt-4 h-1 w-16 rounded-full bg-[#6d28d9]" />
@@ -240,6 +257,17 @@ export default function PrivacyPrinciples({ onViewChange }: PrivacyPrinciplesPro
               MaVionix agrees to keep all information shared by the client strictly confidential. 
               <br /><br />
               This page outlines our strict commitment to safeguarding your data, intellectual property, and business confidentiality during and after our engagement.
+=======
+              Privacy Principles
+            </h1>
+            <div className="mt-4 h-1 w-16 rounded-full bg-[#6d28d9]" />
+            <p className="mt-6 max-w-md text-slate-600 dark:text-slate-300">
+              MaVionix ("we", "us", or "our") respects your privacy and is committed to protecting the personal
+              information you share with us through www.mavionix.in.
+              <br /><br />
+              This page outlines what data we collect, why we collect it, and the choices you have over your own
+              information.
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             </p>
             <button
               onClick={() => onViewChange('cookie-policy')}
@@ -249,6 +277,11 @@ export default function PrivacyPrinciples({ onViewChange }: PrivacyPrinciplesPro
               View Cookie Policy
             </button>
           </div>
+<<<<<<< HEAD
+=======
+
+          {/* Decorative illustration */}
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           <div className="relative mx-auto hidden h-64 w-full max-w-sm lg:block">
             <PrivacyIllustration className="absolute inset-0 h-full w-full" />
           </div>
@@ -258,6 +291,7 @@ export default function PrivacyPrinciples({ onViewChange }: PrivacyPrinciplesPro
       {/* Content sections */}
       <section className="mx-auto max-w-6xl px-6 py-16 sm:px-10 lg:px-20">
         <div className="space-y-12">
+<<<<<<< HEAD
           
           <PolicySection icon={Database} number={1} title="Definition of Confidential Information">
             <p className="mb-2">Confidential Information includes, but is not limited to:</p>
@@ -308,6 +342,86 @@ export default function PrivacyPrinciples({ onViewChange }: PrivacyPrinciplesPro
             </ul>
           </PolicySection>
 
+=======
+          <PolicySection icon={Database} number={1} title="Information We Collect">
+            <p>We collect only the information necessary to serve you well:</p>
+
+            {/* Table (desktop) */}
+            <div className="mt-6 hidden overflow-hidden rounded-xl border border-[#EFDBFF] dark:border-white/10 sm:block">
+              <table className="w-full text-left text-sm">
+                <thead>
+                  <tr className="bg-slate-950 dark:bg-[#6d28d9] text-white">
+                    <th className="px-5 py-3 font-semibold">Category</th>
+                    <th className="px-5 py-3 font-semibold">What it includes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {dataPoints.map((row) => (
+                    <tr key={row.label} className="bg-[#FBF4FF] dark:bg-[#0d0f1a]">
+                      <td className="px-5 py-4 align-top font-medium text-slate-800 dark:text-white">
+                        <span className="flex items-center gap-2">
+                          <row.icon className="h-4 w-4 text-[#6d28d9]" />
+                          {row.label}
+                        </span>
+                      </td>
+                      <td className="px-5 py-4 align-top text-slate-600 dark:text-slate-300">
+                        {row.desc}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            {/* Stacked cards (mobile) */}
+            <div className="mt-6 space-y-4 sm:hidden">
+              {dataPoints.map((row) => (
+                <div
+                  key={row.label}
+                  className="rounded-xl border border-[#EFDBFF] dark:border-white/10 bg-[#FBF4FF] dark:bg-[#0d0f1a] p-4"
+                >
+                  <p className="flex items-center gap-2 font-semibold text-slate-800 dark:text-white">
+                    <row.icon className="h-4 w-4 text-[#6d28d9]" />
+                    {row.label}
+                  </p>
+                  <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">{row.desc}</p>
+                </div>
+              ))}
+            </div>
+          </PolicySection>
+
+          <PolicySection icon={Eye} number={2} title="How We Use Your Information">
+            <p>
+              We use the information you provide to respond to enquiries, prepare proposals, deliver contracted
+              services, process job applications, and improve our website experience. We do not sell your personal
+              information to third parties under any circumstance.
+            </p>
+          </PolicySection>
+
+          <PolicySection icon={Lock} number={3} title="Data Security">
+            <p>
+              We apply reasonable technical and organizational measures — including access controls and encrypted
+              transmission where applicable — to protect your data from unauthorized access, alteration, or
+              disclosure. No method of transmission over the internet is completely secure, and we cannot guarantee
+              absolute security.
+            </p>
+          </PolicySection>
+
+          <PolicySection icon={Share2} number={4} title="Sharing of Information">
+            <p>
+              We may share limited information with trusted service providers (such as hosting, email, or payment
+              processors) strictly to deliver our services, and only under confidentiality obligations. We may also
+              disclose information where required by law.
+            </p>
+          </PolicySection>
+
+          <PolicySection icon={UserCheck} number={5} title="Your Rights">
+            <p>
+              You may request access to, correction of, or deletion of your personal data held by us at any time by
+              contacting us at the email below. We will respond to verified requests within a reasonable timeframe.
+            </p>
+          </PolicySection>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
         </div>
       </section>
 
@@ -321,12 +435,20 @@ export default function PrivacyPrinciples({ onViewChange }: PrivacyPrinciplesPro
             <div>
               <h3 className="font-semibold text-slate-800 dark:text-white">Privacy Concerns?</h3>
               <p className="mt-1 max-w-lg text-sm text-slate-600 dark:text-slate-300">
+<<<<<<< HEAD
                 Write to us if you require a formal NDA or wish to exercise your data rights.
+=======
+                Write to us if you'd like to exercise any of your data privacy rights.
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               </p>
             </div>
           </div>
           <a
+<<<<<<< HEAD
             href="mailto:mavionix360@gmail.com"
+=======
+            href="mailto:contactmavionix@gmail.com"
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             className="inline-flex flex-shrink-0 items-center gap-2 rounded-full bg-slate-950 dark:bg-[#6d28d9] px-6 py-3 text-sm font-semibold text-white shadow-md shadow-[#C800FF]/30 transition hover:bg-[#AD00E0] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C800FF] focus-visible:ring-offset-2"
           >
             <Mail className="h-4 w-4" />
@@ -338,14 +460,34 @@ export default function PrivacyPrinciples({ onViewChange }: PrivacyPrinciplesPro
   );
 }
 
+<<<<<<< HEAD
 function PolicySection({ icon: Icon, number, title, children }: { icon: React.ComponentType<{ className?: string }>; number: number; title: string; children: React.ReactNode; }) {
+=======
+function PolicySection({
+  icon: Icon,
+  number,
+  title,
+  children,
+}: {
+  icon: React.ComponentType<{ className?: string }>;
+  number: number;
+  title: string;
+  children: React.ReactNode;
+}) {
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   return (
     <div className="flex gap-4 sm:gap-6">
       <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-slate-950 dark:bg-[#6d28d9] text-white">
         <Icon className="h-5 w-5" />
       </div>
       <div className="flex-1">
+<<<<<<< HEAD
         <h2 className="text-lg font-semibold text-slate-800 dark:text-white">{number}. {title}</h2>
+=======
+        <h2 className="text-lg font-semibold text-slate-800 dark:text-white">
+          {number}. {title}
+        </h2>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
         <div className="mt-2 text-slate-600 dark:text-slate-300">{children}</div>
       </div>
     </div>
@@ -362,4 +504,8 @@ function PrivacyIllustration({ className }: { className?: string }) {
       <rect x="146" y="130" width="8" height="16" rx="3" fill="#6d28d9" />
     </svg>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed

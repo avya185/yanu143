@@ -4,7 +4,10 @@ import { Globe, MessageSquare, Palette, Cpu, PenTool, Briefcase, CheckCircle, Ca
 import { useCurrency } from '../context/CurrencyContext';
 import { motion, AnimatePresence } from 'motion/react';
 import { enhanceImageUrl, enhancedSrcSet } from '../utils/images';
+<<<<<<< HEAD
 import { cardFadeUpScale, cardViewport, useCardTransition } from '../utils/animations';
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 import { createPortal } from 'react-dom';
 import { div } from 'motion/react-client';
 
@@ -115,7 +118,11 @@ const deriveTierContent = (sub: any, tier: PriceTier) => {
     };
   }
 
+<<<<<<< HEAD
   // standard -unchanged, exactly as authored in data.ts
+=======
+  // standard — unchanged, exactly as authored in data.ts
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   return {
     deliverables: baseDeliverables,
     tech: baseTech,
@@ -158,7 +165,10 @@ const TIER_STYLES: Record<PriceTier, {
 
 export default function ServicesSection({ theme, onViewChange, onPreSelectSubService, initialCategoryLabel }: ServicesSectionProps) {
   const { selectedCurrency, convertAmount, formatAmount, translatePriceText } = useCurrency();
+<<<<<<< HEAD
   const cardTransition = useCardTransition();
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
   // Resolve a SERVICES index from a category label (e.g. "Chatbot Development"),
   // falling back to the first tab if no match/label is provided.
@@ -220,6 +230,7 @@ export default function ServicesSection({ theme, onViewChange, onPreSelectSubSer
     };
   }, [isPricingModalOpen]);
 
+<<<<<<< HEAD
 useEffect(() => {
     const root = detailPanelRef.current;
     if (!root) return;
@@ -246,6 +257,8 @@ useEffect(() => {
     };
   }, [activeCategoryIndex, expandedSubIndex]);
 
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   // SOLUTION ARCHITECT DESIGN STATES
   const [selectedEstimatorIds, setSelectedEstimatorIds] = useState<string[]>(["wp_site", "logo_design"]);
   const [revisionLevel, setRevisionLevel] = useState<'basic' | 'standard' | 'premium'>('standard');
@@ -412,7 +425,11 @@ Let's discuss my custom specifications and launch timeline!`;
       {/* Background radial soft light grid pattern */}
       <div className="absolute inset-0 opacity-[0.015] pointer-events-none bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:20px_20px]"></div>
 
+<<<<<<< HEAD
       {/* 1. INTRO SPLASH -full-bleed 100vw, no border, seamlessly merges into the page background */}
+=======
+      {/* 1. INTRO SPLASH — full-bleed 100vw, no border, seamlessly merges into the page background */}
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
       <section className="relative w-full overflow-hidden bg-white dark:bg-[#07070f]">
         <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(168,85,247,0.07),transparent_35%),radial-gradient(circle_at_80%_15%,rgba(124,58,237,0.045),transparent_30%)] dark:bg-[radial-gradient(circle_at_20%_20%,rgba(124,58,237,0.16),transparent_32%),radial-gradient(circle_at_82%_10%,rgba(59,130,246,0.14),transparent_28%),radial-gradient(circle_at_50%_100%,rgba(16,185,129,0.10),transparent_32%)]" />
@@ -431,11 +448,18 @@ Let's discuss my custom specifications and launch timeline!`;
               transition={{ duration: 0.6 }}
               className="max-w-3xl text-center sm:text-left"
             >
+<<<<<<< HEAD
               
               <div className="inline-flex items-center gap-2 rounded-full border border-purple-200/70 bg-white/80 px-3 py-1.5 text-[11px] font-black uppercase tracking-[0.24em] text-purple-700 shadow-sm backdrop-blur dark:border-purple-500/25 dark:bg-white/5 dark:text-purple-200">
                 <Layers size={14} className="text-purple-700 dark:text-purple-300" />
                 Our Solutions
               </div> 
+=======
+              <div className="inline-flex items-center gap-2 rounded-full border border-purple-200/70 bg-white/80 px-3 py-1.5 text-[11px] font-black uppercase tracking-[0.24em] text-purple-700 shadow-sm backdrop-blur dark:border-purple-500/25 dark:bg-white/5 dark:text-purple-200">
+                <Layers size={14} className="text-purple-700 dark:text-purple-300" />
+                Our Solutions
+              </div>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
               <h1 className="mt-6 text-4xl font-black uppercase leading-[0.95] tracking-[-0.03em] text-slate-950 sm:text-5xl lg:text-6xl dark:text-white">
                 Explore Our <span className="text-gradient-royal">Comprehensive</span> Services{' '}
@@ -446,9 +470,14 @@ Let's discuss my custom specifications and launch timeline!`;
                 Compare packages starting as low as {formatAmount(499)}, and learn about our specific deliverable items. Pick a service to view full timelines, integrations, and tech stack parameters.
               </p>
 
+<<<<<<< HEAD
            
               <div className="mt-8 flex flex-row items-center justify-center gap-3 sm:flex-row sm:items-start sm:justify-start">
             <button onClick={() => onViewChange('contact')} className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-5 py-3 text-xs font-black uppercase tracking-wider text-white transition hover:-translate-y-0.5 hover:shadow-lg dark:bg-purple-400 dark:text-slate-950">
+=======
+              <div className="mt-8 flex flex-row flex-wrap items-center justify-center gap-3 sm:flex-row sm:items-start sm:justify-start">
+                <button onClick={() => onViewChange('contact')} className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-5 py-3 text-xs font-black uppercase tracking-wider text-white transition hover:-translate-y-0.5 hover:shadow-lg dark:bg-purple-400 dark:text-slate-950">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                   Schedule a consult
                   <ArrowRight size={16} />
                 </button>
@@ -462,6 +491,7 @@ Let's discuss my custom specifications and launch timeline!`;
                   { value: '7+', label: 'Service lanes' },
                   { value: '24hrs', label: 'Review window' },
                   { value: '100%', label: 'Transparent scope' },
+<<<<<<< HEAD
                 ].map((stat, statIdx) => (
                   <motion.div
                     key={stat.label}
@@ -475,6 +505,13 @@ Let's discuss my custom specifications and launch timeline!`;
                     <div className="text-base sm:text-2xl font-black tracking-tight text-purple-700 dark:text-purple-300">{stat.value}</div>
                     <div className="mt-1 text-[8px] sm:text-[10px] font-black uppercase tracking-[0.08em] sm:tracking-[0.22em] text-slate-500 dark:text-slate-400">{stat.label}</div>
                   </motion.div>
+=======
+                ].map((stat) => (
+                  <div key={stat.label} className="rounded-xl sm:rounded-2xl border border-slate-200/70 bg-white/85 p-2.5 sm:p-4 text-center shadow-[0_20px_60px_rgba(15,23,42,0.06)] backdrop-blur dark:border-white/10 dark:bg-slate-900/70">
+                    <div className="text-base sm:text-2xl font-black tracking-tight text-purple-700 dark:text-purple-300">{stat.value}</div>
+                    <div className="mt-1 text-[8px] sm:text-[10px] font-black uppercase tracking-[0.08em] sm:tracking-[0.22em] text-slate-500 dark:text-slate-400">{stat.label}</div>
+                  </div>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                 ))}
               </div>
             </motion.div>
@@ -521,7 +558,11 @@ Let's discuss my custom specifications and launch timeline!`;
             <span className="sr-only">Services Categories Navigation Tab List</span>
 
             {/* Desktop Side Navigation */}
+<<<<<<< HEAD
             <div className="reveal-left hidden lg:flex flex-col gap-2 p-3 bg-[#fbfbfe] dark:bg-[#0b0b13] border border-slate-200/50 dark:border-slate-900 rounded-sm">
+=======
+            <div className="hidden lg:flex flex-col gap-2 p-3 bg-[#fbfbfe] dark:bg-[#0b0b13] border border-slate-200/50 dark:border-slate-900 rounded-sm">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               <h3 className="text-[10px] font-black text-slate-450 dark:text-slate-500 uppercase tracking-wider px-3 mb-2">
                 Capacities Catalog
               </h3>
@@ -562,7 +603,11 @@ Let's discuss my custom specifications and launch timeline!`;
                   key={cat.label}
                   onClick={() => handleCategoryClick(idx)}
                   className={`flex-shrink-0 snap-start px-4 py-2.5 rounded-sm text-xs font-bold transition-all flex items-center gap-2 border ${activeCategoryIndex === idx
+<<<<<<< HEAD
                     ? 'bg-slate-900 text-white dark:bg-[#6d28d9] dark:text-slate-950 border-transparent'
+=======
+                    ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-950 border-transparent'
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                     : 'bg-[#fbfbfe] dark:bg-gray-900/50 text-slate-700 dark:text-slate-350 border-slate-205 dark:border-slate-800'
                     }`}
                 >
@@ -596,7 +641,11 @@ Let's discuss my custom specifications and launch timeline!`;
 
           {/* RIGHT SIDE DETAILED COLLAPSIBLE SERVICES */}
           <div ref={detailPanelRef} className="lg:col-span-8 space-y-6">
+<<<<<<< HEAD
             <AnimatePresence>
+=======
+            <AnimatePresence mode="wait">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               <motion.div
                 key={activeCategoryIndex}
                 initial={{ opacity: 0, y: 15 }}
@@ -923,7 +972,11 @@ Let's discuss my custom specifications and launch timeline!`;
                 ) : activeCategory ? (
                   <>
                     {/* Category summary banner */}
+<<<<<<< HEAD
                     <div className="reveal p-6 bg-[#fbfbfe] dark:bg-[#0d0d16] border border-slate-200/50 dark:border-slate-900 rounded-sm">
+=======
+                    <div className="p-6 bg-[#fbfbfe] dark:bg-[#0d0d16] border border-slate-200/50 dark:border-slate-900 rounded-sm">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                       <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
                         <div className="md:col-span-8">
                           <div className="flex gap-4 items-center mb-2">
@@ -961,7 +1014,11 @@ Let's discuss my custom specifications and launch timeline!`;
                         return (
                           <div
                             key={sub.label}
+<<<<<<< HEAD
                             className={`reveal-up border border-slate-200/50 dark:border-slate-900 rounded-sm bg-white dark:bg-[#0c0c14] overflow-hidden transition-all duration-300 ${isExpanded ? 'shadow-sm border-blue-500/20' : 'hover:border-slate-300 dark:hover:border-slate-800'
+=======
+                            className={`border border-slate-200/50 dark:border-slate-900 rounded-sm bg-white dark:bg-[#0c0c14] overflow-hidden transition-all duration-300 ${isExpanded ? 'shadow-sm border-blue-500/20' : 'hover:border-slate-300 dark:hover:border-slate-800'
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                               }`}
                           >
                             {/* Header trigger */}
@@ -1004,7 +1061,11 @@ Let's discuss my custom specifications and launch timeline!`;
                                   </p>
                                 </div>
 
+<<<<<<< HEAD
                                 {/* 2. Grid items -content below now reacts to the selected pricing tier */}
+=======
+                                {/* 2. Grid items — content below now reacts to the selected pricing tier */}
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-slate-100 dark:border-slate-900">
                                   {/* Deliverables */}
                                   <div>
@@ -1056,6 +1117,7 @@ Let's discuss my custom specifications and launch timeline!`;
                                   </div>
                                 </div>
 
+<<<<<<< HEAD
                                 {/* 3. Package Estimates matrix -buttons now select the active tier shown above */}
                                 <div className="pt-4 border-t border-slate-100 dark:border-slate-900">
                                   <h4 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wide mb-3">Package Price Estimates ({selectedCurrency.code})</h4>
@@ -1069,6 +1131,18 @@ Let's discuss my custom specifications and launch timeline!`;
                                           initial={{ opacity: 0, y: 14 }}
                                           animate={{ opacity: 1, y: 0 }}
                                           transition={cardTransition(tierIdx, 0.35, 0.08, 0.4)}
+=======
+                                {/* 3. Package Estimates matrix — buttons now select the active tier shown above */}
+                                <div className="pt-4 border-t border-slate-100 dark:border-slate-900">
+                                  <h4 className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-wide mb-3">Package Price Estimates ({selectedCurrency.code})</h4>
+                                  <div className="grid grid-cols-3 gap-3">
+                                    {(['basic', 'standard', 'premium'] as const).map((tier) => {
+                                      const isActive = selectedPricingTier === tier;
+                                      const style = TIER_STYLES[tier];
+                                      return (
+                                        <div
+                                          key={tier}
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                                           className={`p-3 border rounded-sm text-center space-y-2 transition-all ${isActive ? style.cardActive : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-805'
                                             }`}
                                         >
@@ -1089,13 +1163,21 @@ Let's discuss my custom specifications and launch timeline!`;
                                           >
                                             {isActive ? '✓ Selected' : `Choose ${tier === 'basic' ? 'Basic' : tier === 'standard' ? 'Standard' : 'Premium'}`}
                                           </button>
+<<<<<<< HEAD
                                         </motion.div>
+=======
+                                        </div>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                                       );
                                     })}
                                   </div>
                                 </div>
 
+<<<<<<< HEAD
                                 {/* 4. Action Button -submits a quote request for whichever tier is currently selected */}
+=======
+                                {/* 4. Action Button — submits a quote request for whichever tier is currently selected */}
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                                 <div className="pt-4 border-t border-slate-100 dark:border-slate-900 flex flex-col sm:flex-row gap-4 justify-between items-center bg-slate-50/50 dark:bg-slate-900/40 p-4 rounded-sm">
                                   <div className="text-center sm:text-left">
                                     <p className="text-[11px] text-slate-440 font-black uppercase tracking-wider">Ready to begin this deliverable?</p>

@@ -79,7 +79,11 @@ export default function CookiePolicy({ onViewChange }: CookiePolicyProps) {
             </h1>
             <div className="mt-4  h-1 w-16 rounded-full bg-[#6d28d9]" />
             <p className="mt-6 max-w-md text-slate-600">
+<<<<<<< HEAD
               Welcome to MaVionix. This Cookie Policy explains how MaVionix ("we", "us", or "our") uses cookies and similar tracking technologies when you visit our website at www.mavionix.com.This policy provides you with clear and comprehensive information about the cookies we use and the purposes for using them.<br></br>
+=======
+              Welcome to MaVionix. This Cookie Policy explains how MaVionix ("we", "us", or "our") uses cookies and similar tracking technologies when you visit our website at www.mavionix.in.This policy provides you with clear and comprehensive information about the cookies we use and the purposes for using them.<br></br>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 By continuing to use our website, you consent to our use of cookies as described in this Cookie Policy. If you do not agree to the use of cookies, you may adjust your browser settings or discontinue use of our website.
 
             </p>

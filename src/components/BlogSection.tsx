@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useEffect, useMemo, useRef, useState } from 'react';
+=======
+import React, { useMemo, useState } from 'react';
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 import {
   ArrowLeft,
   ArrowRight,
@@ -10,9 +14,17 @@ import {
   UserRound,
   X,
 } from 'lucide-react';
+<<<<<<< HEAD
 import { CATEGORIES, POSTS, getFeaturedPost, getRelatedPosts } from '../blog/data/posts';
 import { enhanceImageUrl, enhancedSrcSet } from '../utils/images';
 import PageHero from './ui/PageHero';
+=======
+import { motion } from 'motion/react';
+import { CATEGORIES, POSTS, getFeaturedPost, getRelatedPosts } from '../blog/data/posts';
+import { enhanceImageUrl, enhancedSrcSet } from '../utils/images';
+import PageHero from './ui/PageHero';
+import { cardFadeUp, cardViewport, cardTransition } from '../utils/animations';
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
 interface BlogSectionProps {
   onViewChange: (view: string) => void;
@@ -36,6 +48,7 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
   const featuredPost = getFeaturedPost();
   const activePost = activeSlug ? POSTS.find((post: any) => post.slug === activeSlug) : null;
 
+<<<<<<< HEAD
   // Blog grid <-> article is a local state toggle, not a route change, so
   // React fully unmounts one tree and mounts a fresh one every time. The new
   // .reveal / .reveal-up nodes start at opacity: 0 (see reveal.css) and were
@@ -61,6 +74,8 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
     return () => cancelAnimationFrame(frame);
   }, [activeSlug]);
 
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   const filteredPosts = useMemo(() => {
     const search = query.trim().toLowerCase();
 
@@ -97,9 +112,15 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
     const relatedPosts = getRelatedPosts(activePost);
 
     return (
+<<<<<<< HEAD
       <section ref={revealRootRef as React.RefObject<HTMLElement>} className="pb-24 pt-3" aria-label={`Blog article: ${activePost.title}`}>
         <article>
           <header className="reveal-up relative overflow-hidden bg-white dark:bg-slate-950">
+=======
+      <section className="pb-24 pt-3" aria-label={`Blog article: ${activePost.title}`}>
+        <article>
+          <header className="relative overflow-hidden bg-white dark:bg-slate-950">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             <div className="absolute inset-0">
               <img
                 src={enhanceImageUrl(activePost.coverImage, { width: 1600, quality: 90 })}
@@ -110,7 +131,11 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
                 loading="eager"
                 decoding="async"
               />
+<<<<<<< HEAD
               <div className="reveal-up absolute inset-0 bg-linear-to-t from-white via-white/75 to-white/20 dark:from-slate-950 dark:via-slate-950/80 dark:to-slate-950/40" />
+=======
+              <div className="absolute inset-0 bg-linear-to-t from-white via-white/75 to-white/20 dark:from-slate-950 dark:via-slate-950/80 dark:to-slate-950/40" />
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             </div>
             <button
               onClick={() => {
@@ -123,6 +148,7 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
               Back to Blog
             </button>
 
+<<<<<<< HEAD
             <div className="reveal-up relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
 
               <h1 className="reveal-up max-w-4xl text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-slate-950 dark:text-white">
@@ -134,6 +160,19 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
 
               <div className=" reveal-upmt-8 flex flex-wrap items-center gap-4 text-sm text-slate-600 dark:text-slate-200">
                 <span className="reveal-up inline-flex items-center gap-2">
+=======
+            <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+
+              <h1 className="max-w-4xl text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-slate-950 dark:text-white">
+                {activePost.title}
+              </h1>
+              <p className="mt-5 max-w-3xl text-base sm:text-lg leading-relaxed text-slate-700 dark:text-blue-100">
+                {activePost.excerpt}
+              </p>
+
+              <div className="mt-8 flex flex-wrap items-center gap-4 text-sm text-slate-600 dark:text-slate-200">
+                <span className="inline-flex items-center gap-2">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                   <img
                     src={enhanceImageUrl(activePost.author.avatar, { width: 96, height: 96, quality: 90, crop: 'faces' })}
                     alt={activePost.author.name}
@@ -143,11 +182,19 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
                   />
                   {activePost.author.name}
                 </span>
+<<<<<<< HEAD
                 <span className="reveal-up inline-flex items-center gap-1.5">
                   <Calendar size={15} />
                   {formatDate(activePost.publishedAt)}
                 </span>
                 <span className="reveal-up inline-flex items-center gap-1.5">
+=======
+                <span className="inline-flex items-center gap-1.5">
+                  <Calendar size={15} />
+                  {formatDate(activePost.publishedAt)}
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                   <Clock size={15} />
                   {activePost.readTime} min read
                 </span>
@@ -155,7 +202,11 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
             </div>
           </header>
 
+<<<<<<< HEAD
           <div className="reveal-up mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+=======
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             <div
               className="blog-prose"
               dangerouslySetInnerHTML={{ __html: activePost.content }}
@@ -169,7 +220,11 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
               }}
             />
 
+<<<<<<< HEAD
             <div className="reveal-up mt-10 flex flex-wrap gap-2 border-t border-slate-200 pt-8 dark:border-slate-800">
+=======
+            <div className="mt-10 flex flex-wrap gap-2 border-t border-slate-200 pt-8 dark:border-slate-800">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               {activePost.tags.map((tag: string) => (
                 <span
                   key={tag}
@@ -180,7 +235,11 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
               ))}
             </div>
 
+<<<<<<< HEAD
             <div className="reveal-up mt-10 rounded-lg border border-slate-200 bg-white p-6 shadow-xl dark:border-slate-800 dark:bg-slate-950">
+=======
+            <div className="mt-10 rounded-lg border border-slate-200 bg-white p-6 shadow-xl dark:border-slate-800 dark:bg-slate-950">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
                 <img
                   src={enhanceImageUrl(activePost.author.avatar, { width: 144, height: 144, quality: 90, crop: 'faces' })}
@@ -190,6 +249,7 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
                   decoding="async"
                 />
                 <div>
+<<<<<<< HEAD
                   <div className="reveal-up text-xs font-extrabold uppercase tracking-widest text-purple-700 dark:text-purple-300">
                     Written by
                   </div>
@@ -200,13 +260,29 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
                     {activePost.author.role}
                   </p>
                   <p className="reveal-up mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+=======
+                  <div className="text-xs font-extrabold uppercase tracking-widest text-purple-700 dark:text-purple-300">
+                    Written by
+                  </div>
+                  <h2 className="mt-1 text-xl font-black text-slate-950 dark:text-white">
+                    {activePost.author.name}
+                  </h2>
+                  <p className="text-sm font-bold text-slate-500 dark:text-slate-400">
+                    {activePost.author.role}
+                  </p>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                     {activePost.author.bio}
                   </p>
                 </div>
               </div>
             </div>
 
+<<<<<<< HEAD
             <div className="reveal-up mt-10 rounded-lg bg-white dark:bg-purple-900 p-7 text-black shadow-xl dark:shadow-purple-950/40">
+=======
+            <div className="mt-10 rounded-lg bg-white dark:bg-purple-900 p-7 text-black shadow-xl dark:shadow-purple-950/40">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               <h2 className="text-2xl font-black text-black dark:text-white ">Need this kind of thinking applied to your business?</h2>
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-purple-100">
                 Talk to MaVionix about AI automation, web systems, design, and growth workflows built around your actual operations.
@@ -226,12 +302,20 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
         </article>
 
         {relatedPosts.length > 0 && (
+<<<<<<< HEAD
           <div className="reveal-up mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+=======
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             <div className="mb-5 flex items-center gap-2">
               <Sparkles size={18} className="text-[#C800FF] dark:text-purple-300" />
               <h2 className="text-2xl font-black text-slate-950 dark:text-white">Related Articles</h2>
             </div>
+<<<<<<< HEAD
             <div className="reveal-up grid gap-6 md:grid-cols-3">
+=======
+            <div className="grid gap-6 md:grid-cols-3">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               {relatedPosts.map((post: any, index: number) => (
                 <BlogCard key={post.id} post={post} onOpen={openPost} compact index={index} />
               ))}
@@ -243,7 +327,11 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
   }
 
   return (
+<<<<<<< HEAD
     <section ref={revealRootRef as React.RefObject<HTMLElement>} className="pt-3 pb-20" aria-label="MaVionix Blog">
+=======
+    <section className="pt-3 pb-20" aria-label="MaVionix Blog">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
       <PageHero
       svg={        <UserRound size={14} className="text-purple-700 dark:text-purple-300" />}
         badge={
@@ -262,7 +350,11 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
         description="Practical articles on AI, web development, automation, UX, and marketing from the MaVionix team."
         className="border-b-0 pb-0"
       >
+<<<<<<< HEAD
         <div className="reveal-up mx-auto max-w-2xl">
+=======
+        <div className="mx-auto max-w-2xl">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           <label className="relative block">
             <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-400" />
             <input
@@ -284,6 +376,7 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
         </div>
       </PageHero>
 
+<<<<<<< HEAD
       <div className="reveal-up mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-12">
         {featuredPost && activeCategory === 'all' && !query.trim() && (
           <div className="mb-14">
@@ -296,6 +389,25 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
               className="reveal-up group grid w-full overflow-hidden rounded-lg border border-slate-200 bg-white text-left shadow-xl dark:border-slate-800 dark:bg-slate-950 lg:grid-cols-[1.05fr_0.95fr]"
             >
               <div className="relative min-h-[280px] sm:min-h-[340px] overflow-hidden">
+=======
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-12">
+        {featuredPost && activeCategory === 'all' && !query.trim() && (
+          <div className="mb-14">
+            <div className="mb-5 flex items-center gap-2">
+              <div className="h-6 w-1 rounded-full bg-[#C800FF]" />
+              <span className="text-xs font-extrabold uppercase tracking-widest text-[#C800FF] dark:text-purple-300">Editor's Pick</span>
+            </div>
+            <motion.button
+              onClick={() => openPost(featuredPost.slug)}
+              initial="hidden"
+              whileInView="visible"
+              viewport={cardViewport}
+              variants={cardFadeUp}
+              transition={cardTransition(0)}
+              className="group grid w-full overflow-hidden rounded-lg border border-slate-200 bg-white text-left shadow-xl dark:border-slate-800 dark:bg-slate-950 lg:grid-cols-[1.05fr_0.95fr]"
+            >
+              <div className="relative min-h-70 overflow-hidden">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                 <img
                   src={enhanceImageUrl(featuredPost.coverImage, { width: 1200, quality: 90 })}
                   srcSet={enhancedSrcSet(featuredPost.coverImage, [640, 960, 1200, 1600], { quality: 90 })}
@@ -308,6 +420,7 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
               </div>
               <div className="p-7 sm:p-10">
                 <PostMeta post={featuredPost} />
+<<<<<<< HEAD
                 <h2 className="reveal-up mt-4 text-3xl sm:text-4xl font-black leading-tight text-slate-950 dark:text-white">
                   {featuredPost.title}
                 </h2>
@@ -315,15 +428,32 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
                   {featuredPost.excerpt}
                 </p>
                 <span className="reveal-up mt-7 inline-flex items-center gap-2 text-sm font-extrabold text-purple-700 dark:text-purple-300">
+=======
+                <h2 className="mt-4 text-3xl sm:text-4xl font-black leading-tight text-slate-950 dark:text-white">
+                  {featuredPost.title}
+                </h2>
+                <p className="mt-4 text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300">
+                  {featuredPost.excerpt}
+                </p>
+                <span className="mt-7 inline-flex items-center gap-2 text-sm font-extrabold text-purple-700 dark:text-purple-300">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                   Read featured article
                   <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
                 </span>
               </div>
+<<<<<<< HEAD
             </button>
           </div>
         )}
 
         <div className="reveal-up mb-8 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+=======
+            </motion.button>
+          </div>
+        )}
+
+        <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           <div className="flex flex-wrap gap-2">
             {CATEGORIES.map((category: { id: string; label: string }) => (
               <button
@@ -342,7 +472,11 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
           {(activeCategory !== 'all' || query) && (
             <button
               onClick={clearFilters}
+<<<<<<< HEAD
               className="reveal-right inline-flex items-center gap-2 self-start rounded-sm border border-slate-200 bg-white px-4 py-2 text-xs font-extrabold text-slate-600 hover:text-purple-700 dark:border-slate-800 dark:bg-slate-950 dark:text-slate-300"
+=======
+              className="inline-flex items-center gap-2 self-start rounded-sm border border-slate-200 bg-white px-4 py-2 text-xs font-extrabold text-slate-600 hover:text-purple-700 dark:border-slate-800 dark:bg-slate-950 dark:text-slate-300"
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             >
               <X size={14} />
               Clear filters
@@ -351,7 +485,11 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
         </div>
 
         {gridPosts.length > 0 ? (
+<<<<<<< HEAD
           <div className="reveal-left grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+=======
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             {gridPosts.map((post: any, index: number) => (
               <BlogCard key={post.id} post={post} onOpen={openPost} index={index} />
             ))}
@@ -378,11 +516,24 @@ export default function BlogSection({ onViewChange }: BlogSectionProps) {
 
 function BlogCard({ post, onOpen, compact = false, index = 0 }: { key?: unknown; post: any; onOpen: (slug: string) => void; compact?: boolean; index?: number }) {
   return (
+<<<<<<< HEAD
     <button
       onClick={() => onOpen(post.slug)}
       className="reveal-up group flex h-full flex-col overflow-hidden rounded-lg border border-slate-200 bg-white text-left shadow-xl dark:border-slate-800 dark:bg-slate-950"
     >
       <div className=" reveal-up relative aspect-16/10 overflow-hidden">
+=======
+    <motion.button
+      onClick={() => onOpen(post.slug)}
+      initial="hidden"
+      whileInView="visible"
+      viewport={cardViewport}
+      variants={cardFadeUp}
+      transition={cardTransition(index)}
+      className="group flex h-full flex-col overflow-hidden rounded-lg border border-slate-200 bg-white text-left shadow-xl dark:border-slate-800 dark:bg-slate-950"
+    >
+      <div className="relative aspect-16/10 overflow-hidden">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
         <img
           src={enhanceImageUrl(post.coverImage, { width: compact ? 720 : 900, quality: 90 })}
           srcSet={enhancedSrcSet(post.coverImage, compact ? [360, 540, 720] : [480, 720, 900, 1200], { quality: 90 })}
@@ -396,6 +547,7 @@ function BlogCard({ post, onOpen, compact = false, index = 0 }: { key?: unknown;
           {getCategoryLabel(post.category)}
         </span>
       </div>
+<<<<<<< HEAD
       <div className="reveal-up flex flex-1 flex-col p-5">
         <PostMeta post={post} />
         <h3 className={`${compact ? 'text-lg' : 'text-xl'} reveal-up mt-3 font-black leading-snug text-slate-950 dark:text-white`}>
@@ -405,16 +557,32 @@ function BlogCard({ post, onOpen, compact = false, index = 0 }: { key?: unknown;
           {post.excerpt}
         </p>
         <span className="reveal-up mt-5 inline-flex items-center gap-2 text-sm font-extrabold text-purple-700 dark:text-purple-300">
+=======
+      <div className="flex flex-1 flex-col p-5">
+        <PostMeta post={post} />
+        <h3 className={`${compact ? 'text-lg' : 'text-xl'} mt-3 font-black leading-snug text-slate-950 dark:text-white`}>
+          {post.title}
+        </h3>
+        <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+          {post.excerpt}
+        </p>
+        <span className="mt-5 inline-flex items-center gap-2 text-sm font-extrabold text-purple-700 dark:text-purple-300">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           Read article
           <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" />
         </span>
       </div>
+<<<<<<< HEAD
     </button>
+=======
+    </motion.button>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   );
 }
 
 function PostMeta({ post }: { post: any }) {
   return (
+<<<<<<< HEAD
     <div className="reveal-up flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-bold text-slate-500 dark:text-slate-400">
       <span className="reveal-up inline-flex items-center gap-1.5">
         <UserRound size={13} />
@@ -425,6 +593,18 @@ function PostMeta({ post }: { post: any }) {
         {formatDate(post.publishedAt)}
       </span>
       <span className="reveal-up inline-flex items-center gap-1.5">
+=======
+    <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-bold text-slate-500 dark:text-slate-400">
+      <span className="inline-flex items-center gap-1.5">
+        <UserRound size={13} />
+        {post.author.name}
+      </span>
+      <span className="inline-flex items-center gap-1.5">
+        <Calendar size={13} />
+        {formatDate(post.publishedAt)}
+      </span>
+      <span className="inline-flex items-center gap-1.5">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
         <Clock size={13} />
         {post.readTime} min
       </span>

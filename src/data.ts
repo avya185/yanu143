@@ -719,7 +719,11 @@ export const FUTURE_GOALS: FutureGoal[] = [
   {
     year: "2028",
     title: "Applied AI Innovations Hub",
+<<<<<<< HEAD
     description: "Opening an experimental research segment between Rohini, Delhi - 110089 and Modinagar, Ghaziabad - 201204 to experiment with optimized micro-LLM configurations and custom on-premise pipeline setups."
+=======
+    description: "Opening an experimental research segment between Rohini, Delhi - 110085 and Modinagar, Ghaziabad - 201204 to experiment with optimized micro-LLM configurations and custom on-premise pipeline setups."
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   },
   {
     year: "2029",

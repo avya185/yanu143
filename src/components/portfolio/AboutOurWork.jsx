@@ -10,10 +10,16 @@ const HIGHLIGHTS = [
 ];
 
 /**
+<<<<<<< HEAD
  * AboutOurWork -Purpose and value of the MaVionix portfolio (Section 1 blueprint).
  */
 const AboutOurWork = () => {
   return (
+=======
+ * AboutOurWork — Purpose and value of the MaVionix portfolio (Section 1 blueprint).
+ */
+const AboutOurWork = () => (
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   <section className="py-20 bg-white dark:bg-[#07070f]" aria-labelledby="about-work-heading">
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
       <div className="space-y-5">
@@ -35,10 +41,14 @@ const AboutOurWork = () => {
           </p>
           <ul className="space-y-3" role="list">
             {HIGHLIGHTS.map((item) => (
+<<<<<<< HEAD
               <li
                 key={item}
                 className="reveal flex gap-3 text-sm leading-6 text-slate-700 dark:text-slate-300"
               >
+=======
+              <li key={item} className="flex gap-3 text-sm leading-6 text-slate-700 dark:text-slate-300">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                 <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-purple-600 dark:text-purple-400" aria-hidden="true" />
                 <span>{item}</span>
               </li>
@@ -48,7 +58,11 @@ const AboutOurWork = () => {
       </div>
     </div>
   </section>
+<<<<<<< HEAD
   );
 };
+=======
+);
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
 export default AboutOurWork;

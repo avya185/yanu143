@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 import { motion } from 'motion/react';
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 import { ArrowRight, MessageSquare } from 'lucide-react';
 import GradientButton from '../ui/GradientButton';
 
 /**
+<<<<<<< HEAD
  * PortfolioCTA -Final conversion section (blueprint Section 9).
+=======
+ * PortfolioCTA — Final conversion section (blueprint Section 9).
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
  */
 const PortfolioCTA = ({ onViewChange }) => (
   <section
@@ -16,6 +23,7 @@ const PortfolioCTA = ({ onViewChange }) => (
     />
     <div className="orb orb-blue absolute -top-20 -right-20 h-64 w-64 opacity-60" aria-hidden="true" />
 
+<<<<<<< HEAD
     <motion.div
       className="relative z-10 mx-auto max-w-3xl px-4 sm:px-6 text-center"
       initial={{ opacity: 0, y: 24 }}
@@ -23,6 +31,9 @@ const PortfolioCTA = ({ onViewChange }) => (
       viewport={{ once: true, amount: 0.3, margin: '0px 0px -60px 0px' }}
       transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
     >
+=======
+    <div className="relative z-10 mx-auto max-w-3xl px-4 sm:px-6 text-center">
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
       <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-purple-500/25 bg-purple-500/10 px-4 py-2 mx-auto">
         <MessageSquare className="h-4 w-4 text-purple-700" aria-hidden="true" />
         <span className="text-xs font-semibold uppercase tracking-widest text-purple-700">Ready to collaborate</span>
@@ -44,7 +55,11 @@ const PortfolioCTA = ({ onViewChange }) => (
           <ArrowRight className="h-4 w-4" aria-hidden="true" />
         </GradientButton>
       </div>
+<<<<<<< HEAD
     </motion.div>
+=======
+    </div>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   </section>
 );
 

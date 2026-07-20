@@ -1,18 +1,33 @@
 /**
+<<<<<<< HEAD
  * portfolio.js -Canonical portfolio content for MaVionix.
+=======
+ * portfolio.js — Canonical portfolio content for MaVionix.
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
  * Structured for scalable additions: add projects to PORTFOLIO_PROJECTS array.
  */
 
 export const PORTFOLIO_SEO = {
+<<<<<<< HEAD
   title: 'MaVionix Portfolio -Web Development & Digital Solutions',
   description:
     'Explore MaVionix portfolio of website development, e-commerce websites, landing page design, AI chatbot development, mobile app development, and digital agency case studies. Proof-of-work for businesses that demand results.',
   canonical: 'https://www.mavionix.com/portfolio',
+=======
+  title: 'MaVionix Portfolio — Web Development & Digital Solutions',
+  description:
+    'Explore MaVionix portfolio of website development, e-commerce websites, landing page design, AI chatbot development, mobile app development, and digital agency case studies. Proof-of-work for businesses that demand results.',
+  canonical: 'https://www.mavionix.in/portfolio',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   ogImage:
     'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop',
 };
 
+<<<<<<< HEAD
 /** Blueprint Section 5 -grouped filter categories mapped to project `category` values */
+=======
+/** Blueprint Section 5 — grouped filter categories mapped to project `category` values */
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 export const WEBSITE_PROJECT_CATEGORIES = [
   'corporate',
   'ecommerce',
@@ -181,7 +196,11 @@ export const PORTFOLIO_PROJECTS = [
     id: 'corporate-website-development',
     slug: 'corporate-website-development',
     category: 'corporate',
+<<<<<<< HEAD
     categoryLabel: 'Web Development -Corporate Website',
+=======
+    categoryLabel: 'Web Development — Corporate Website',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     title: 'Corporate Website Development',
     shortDescription:
       'Modern corporate website with responsive design, service hierarchy, team showcase, and lead generation system.',
@@ -196,9 +215,15 @@ export const PORTFOLIO_PROJECTS = [
       'Figma (design)',
     ],
     problemStatement:
+<<<<<<< HEAD
       'A mid-sized consulting firm lacked a professional online presence. Their outdated website had poor mobile responsiveness, no clear service hierarchy, and a high bounce rate -causing them to lose leads to competitors.',
     solutionDescription:
       'MaVionix designed and developed a modern, multi-page corporate website with a clear information architecture, compelling service pages, an interactive team section, and a contact system -optimized for both desktop and mobile.',
+=======
+      'A mid-sized consulting firm lacked a professional online presence. Their outdated website had poor mobile responsiveness, no clear service hierarchy, and a high bounce rate — causing them to lose leads to competitors.',
+    solutionDescription:
+      'MaVionix designed and developed a modern, multi-page corporate website with a clear information architecture, compelling service pages, an interactive team section, and a contact system — optimized for both desktop and mobile.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     outcomes: [
       'Website bounce rate dropped by 38%',
       'Contact form submissions increased by 210% within 3 months of launch',
@@ -218,7 +243,11 @@ export const PORTFOLIO_PROJECTS = [
     id: 'ecommerce-fashion-store',
     slug: 'ecommerce-fashion-store',
     category: 'ecommerce',
+<<<<<<< HEAD
     categoryLabel: 'Web Development -E-Commerce',
+=======
+    categoryLabel: 'Web Development — E-Commerce',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     title: 'E-Commerce Fashion Store Website',
     shortDescription:
       'Complete fashion e-commerce platform with dynamic product catalog, filtering, Stripe payments, wishlist, and inventory management.',
@@ -234,13 +263,21 @@ export const PORTFOLIO_PROJECTS = [
       'Figma',
     ],
     problemStatement:
+<<<<<<< HEAD
       'A fashion startup needed a fully functional online store to sell their collection. They had no existing digital infrastructure and required a complete solution -from product listing to payment processing -within a tight timeline.',
+=======
+      'A fashion startup needed a fully functional online store to sell their collection. They had no existing digital infrastructure and required a complete solution — from product listing to payment processing — within a tight timeline.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     solutionDescription:
       'MaVionix built a complete e-commerce website with a dynamic product catalog, filtering by size and category, a cart and wishlist system, secure Stripe payment integration, and an admin dashboard for inventory management.',
     outcomes: [
       'The store launched on schedule and achieved 120 orders in the first 30 days',
       'Average session duration was 4.2 minutes',
+<<<<<<< HEAD
       'The cart-to-checkout conversion rate reached 34% -well above the industry average of 20%',
+=======
+      'The cart-to-checkout conversion rate reached 34% — well above the industry average of 20%',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     ],
     features: [
       'Dynamic product catalog with category and size filters',
@@ -256,7 +293,11 @@ export const PORTFOLIO_PROJECTS = [
     id: 'startup-landing-page-design',
     slug: 'startup-landing-page-design',
     category: 'landing-page',
+<<<<<<< HEAD
     categoryLabel: 'Web Development -Landing Page',
+=======
+    categoryLabel: 'Web Development — Landing Page',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     title: 'Startup Landing Page Design',
     shortDescription:
       'High-converting single-page landing page with modern animations, pricing tables, and HubSpot CRM integration.',
@@ -272,7 +313,11 @@ export const PORTFOLIO_PROJECTS = [
     problemStatement:
       'A SaaS startup needed a high-converting landing page to support their product launch campaign. The page had to communicate complex product value in simple terms, capture leads, and integrate with their CRM within 2 weeks.',
     solutionDescription:
+<<<<<<< HEAD
       'MaVionix designed and developed a focused, single-page website with a strong hero section, feature breakdown, social proof, a pricing table, and an email capture form -integrated with HubSpot for lead management.',
+=======
+      'MaVionix designed and developed a focused, single-page website with a strong hero section, feature breakdown, social proof, a pricing table, and an email capture form — integrated with HubSpot for lead management.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     outcomes: [
       'The landing page achieved a 28% email sign-up conversion rate during the launch campaign',
       'The page load time was under 1.2 seconds',
@@ -292,7 +337,11 @@ export const PORTFOLIO_PROJECTS = [
     id: 'portfolio-website-developer-designer',
     slug: 'portfolio-website-developer-designer',
     category: 'portfolio-site',
+<<<<<<< HEAD
     categoryLabel: 'Web Development -Portfolio Website',
+=======
+    categoryLabel: 'Web Development — Portfolio Website',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     title: 'Portfolio Website for Developer / Designer',
     shortDescription:
       'Custom portfolio website with smooth interactions, project filter module, and Contentful CMS dashboard integration.',
@@ -329,7 +378,11 @@ export const PORTFOLIO_PROJECTS = [
     id: 'restaurant-website-online-menu',
     slug: 'restaurant-website-online-menu',
     category: 'service-site',
+<<<<<<< HEAD
     categoryLabel: 'Web Development -Service / Restaurant Website',
+=======
+    categoryLabel: 'Web Development — Service / Restaurant Website',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     title: 'Restaurant Website with Online Menu System',
     shortDescription:
       'Multi-location restaurant chain website featuring a digital menu matrix, table booking, and Google Maps embed modules.',
@@ -345,7 +398,11 @@ export const PORTFOLIO_PROJECTS = [
       'Figma',
     ],
     problemStatement:
+<<<<<<< HEAD
       'A local restaurant chain had no online presence. Customers were unable to view menus, make reservations, or find location information -causing them to lose business to competitors with better web visibility.',
+=======
+      'A local restaurant chain had no online presence. Customers were unable to view menus, make reservations, or find location information — causing them to lose business to competitors with better web visibility.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     solutionDescription:
       'MaVionix designed and developed a multi-location restaurant website featuring a digital menu system with categories and filters, an online booking inquiry form, a gallery section, and Google Maps integration for all locations.',
     outcomes: [
@@ -367,7 +424,11 @@ export const PORTFOLIO_PROJECTS = [
     id: 'ai-customer-support-chatbot',
     slug: 'ai-customer-support-chatbot',
     category: 'chatbot',
+<<<<<<< HEAD
     categoryLabel: 'AI Chatbot Development -Enterprise',
+=======
+    categoryLabel: 'AI Chatbot Development — Enterprise',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     title: 'AI-Powered Customer Support Chatbot',
     shortDescription:
       'NLP-powered automation bot for WhatsApp and web channels, equipped with API live order tracking and multilingual flows.',
@@ -383,7 +444,11 @@ export const PORTFOLIO_PROJECTS = [
       'AWS Lambda',
     ],
     problemStatement:
+<<<<<<< HEAD
       'A growing e-commerce company was overwhelmed by repetitive customer support queries -order status, return policies, and product inquiries -causing long wait times and customer dissatisfaction. Their human support team was unable to scale with demand.',
+=======
+      'A growing e-commerce company was overwhelmed by repetitive customer support queries — order status, return policies, and product inquiries — causing long wait times and customer dissatisfaction. Their human support team was unable to scale with demand.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     solutionDescription:
       'MaVionix developed an NLP-powered AI chatbot integrated into the company\'s website and WhatsApp channel. The bot handles FAQs, order lookups via API integration, escalation to live agents, and multilingual support for English, Hindi, and Punjabi.',
     outcomes: [
@@ -405,7 +470,11 @@ export const PORTFOLIO_PROJECTS = [
     id: 'lead-generation-chatbot-real-estate',
     slug: 'lead-generation-chatbot-real-estate',
     category: 'chatbot',
+<<<<<<< HEAD
     categoryLabel: 'AI Chatbot Development -Lead Generation',
+=======
+    categoryLabel: 'AI Chatbot Development — Lead Generation',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     title: 'Lead Generation Chatbot for Real Estate Platform',
     shortDescription:
       'Discovery flow qualifying chatbot featuring custom intent branching, CRM routing, and automated Twilio tracking updates.',
@@ -422,7 +491,11 @@ export const PORTFOLIO_PROJECTS = [
     problemStatement:
       'A real estate firm needed an intelligent lead capture system on their website. Visitors were leaving without inquiring, and the sales team was spending excessive time qualifying unfit leads from generic contact forms.',
     solutionDescription:
+<<<<<<< HEAD
       'MaVionix built a conversational lead qualification chatbot that guides website visitors through a discovery flow -capturing location preference, budget, property type, and contact details -then routes qualified leads directly to the appropriate sales agent via CRM.',
+=======
+      'MaVionix built a conversational lead qualification chatbot that guides website visitors through a discovery flow — capturing location preference, budget, property type, and contact details — then routes qualified leads directly to the appropriate sales agent via CRM.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     outcomes: [
       'Lead capture rate increased by 55% compared to the previous contact form',
       'Sales team reported a 40% reduction in time spent on unqualified leads',
@@ -442,7 +515,11 @@ export const PORTFOLIO_PROJECTS = [
     id: 'brand-identity-fintech-startup',
     slug: 'brand-identity-fintech-startup',
     category: 'branding',
+<<<<<<< HEAD
     categoryLabel: 'Graphic Design & Branding -Brand Identity',
+=======
+    categoryLabel: 'Graphic Design & Branding — Brand Identity',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     title: 'Complete Brand Identity for FinTech Startup',
     shortDescription:
       'Full visual asset package design including color guides, iconography matrices, and presentation collateral frameworks.',
@@ -457,7 +534,11 @@ export const PORTFOLIO_PROJECTS = [
     problemStatement:
       'A fintech startup launching a digital payments application had no visual brand identity. They required a professional logo, brand guidelines, color system, and marketing collateral to establish credibility with investors and early users before their app launch.',
     solutionDescription:
+<<<<<<< HEAD
       'MaVionix designed a complete brand identity system from scratch -including a primary logo, logo variations, color palette, typography system, iconography style, business card, pitch deck template, and a comprehensive brand guidelines document.',
+=======
+      'MaVionix designed a complete brand identity system from scratch — including a primary logo, logo variations, color palette, typography system, iconography style, business card, pitch deck template, and a comprehensive brand guidelines document.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     outcomes: [
       'The startup successfully used the brand assets in their Series A investor pitch, raising funding',
       'The brand identity was praised by their investor panel for its professional and trustworthy aesthetic',
@@ -478,7 +559,11 @@ export const PORTFOLIO_PROJECTS = [
     id: 'social-media-content-suite-fashion',
     slug: 'social-media-content-suite-fashion',
     category: 'branding',
+<<<<<<< HEAD
     categoryLabel: 'Graphic Design & Branding -Social Media Design',
+=======
+    categoryLabel: 'Graphic Design & Branding — Social Media Design',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     title: 'Social Media Visual Content Suite for Fashion Brand',
     shortDescription:
       'Multi-channel design solution combining customizable templates with unified image color grading presets.',
@@ -493,7 +578,11 @@ export const PORTFOLIO_PROJECTS = [
     problemStatement:
       'A fashion e-commerce brand was struggling with inconsistent social media aesthetics across Instagram, Facebook, and Pinterest. Their product photos lacked professional post treatment, resulting in low engagement and an unpolished brand perception.',
     solutionDescription:
+<<<<<<< HEAD
       'MaVionix created a complete social media visual content system -including post templates for product showcases, promotional offers, reels covers, story templates, and carousel designs -all aligned to the brand\'s color palette and visual identity.',
+=======
+      'MaVionix created a complete social media visual content system — including post templates for product showcases, promotional offers, reels covers, story templates, and carousel designs — all aligned to the brand\'s color palette and visual identity.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     outcomes: [
       'Instagram engagement rate improved from 1.2% to 4.8% within 60 days of implementing the new visual system',
       'The brand\'s follower count grew by 2,200 in 3 months',
@@ -513,7 +602,11 @@ export const PORTFOLIO_PROJECTS = [
     id: 'uiux-redesign-healthcare-portal',
     slug: 'uiux-redesign-healthcare-portal',
     category: 'uiux',
+<<<<<<< HEAD
     categoryLabel: 'UI/UX Design -Web Application',
+=======
+    categoryLabel: 'UI/UX Design — Web Application',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     title: 'UI/UX Redesign for Healthcare Patient Portal',
     shortDescription:
       'Comprehensive UX audit and interface design engineering optimized for appointment bookings and WCAG accessibility standards.',
@@ -525,7 +618,11 @@ export const PORTFOLIO_PROJECTS = [
       'Miro (user journey mapping)',
     ],
     problemStatement:
+<<<<<<< HEAD
       'A private hospital\'s patient portal had an outdated, confusing interface. Patients struggled to book appointments, access reports, and navigate billing -leading to high drop-off rates and an increase in front-desk queries that could have been handled digitally.',
+=======
+      'A private hospital\'s patient portal had an outdated, confusing interface. Patients struggled to book appointments, access reports, and navigate billing — leading to high drop-off rates and an increase in front-desk queries that could have been handled digitally.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     solutionDescription:
       'MaVionix conducted a full UX audit, user interviews, and redesigned the patient portal from scratch. The new design features a simplified navigation structure, an accessible appointment booking flow, a document download center, and a mobile-first responsive layout.',
     outcomes: [
@@ -548,7 +645,11 @@ export const PORTFOLIO_PROJECTS = [
     id: 'mobile-ui-design-food-delivery',
     slug: 'mobile-ui-design-food-delivery',
     category: 'uiux',
+<<<<<<< HEAD
     categoryLabel: 'UI/UX Design -Mobile Application',
+=======
+    categoryLabel: 'UI/UX Design — Mobile Application',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     title: 'Mobile App UI Design for Food Delivery Startup',
     shortDescription:
       'End-to-end multi-screen interface overhaul prioritizing structured checkout micro-interactions and search components.',
@@ -562,7 +663,11 @@ export const PORTFOLIO_PROJECTS = [
     problemStatement:
       'A food delivery startup had a functional backend but a poorly designed mobile interface that frustrated users during the ordering process. The checkout flow had too many steps, the restaurant discovery was confusing, and the visual design felt outdated.',
     solutionDescription:
+<<<<<<< HEAD
       'MaVionix redesigned the entire mobile app UI -from the onboarding flow to the order tracking screen. The new design prioritizes visual hierarchy, reduces checkout to 3 steps, introduces smart search with filters, and implements a modern card-based restaurant discovery system.',
+=======
+      'MaVionix redesigned the entire mobile app UI — from the onboarding flow to the order tracking screen. The new design prioritizes visual hierarchy, reduces checkout to 3 steps, introduces smart search with filters, and implements a modern card-based restaurant discovery system.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     outcomes: [
       'App store rating improved from 3.2 to 4.5 stars within 2 months of the UI relaunch',
       'Cart abandonment rate dropped by 38%',
@@ -583,7 +688,11 @@ export const PORTFOLIO_PROJECTS = [
     id: 'fitness-tracking-mobile-app',
     slug: 'fitness-tracking-mobile-app',
     category: 'mobile',
+<<<<<<< HEAD
     categoryLabel: 'Mobile Application Development -Health & Fitness',
+=======
+    categoryLabel: 'Mobile Application Development — Health & Fitness',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     title: 'Fitness Tracking Mobile App (iOS & Android)',
     shortDescription:
       'Cross-platform mobile application integration with nutrition databases, progress analytics, and on-device AI.',
@@ -623,7 +732,11 @@ export const PORTFOLIO_PROJECTS = [
     id: 'grocery-delivery-app',
     slug: 'grocery-delivery-app',
     category: 'mobile',
+<<<<<<< HEAD
     categoryLabel: 'Mobile Application Development -E-Commerce / Delivery',
+=======
+    categoryLabel: 'Mobile Application Development — E-Commerce / Delivery',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     title: 'Grocery Delivery App for Local Supermarket Chain',
     shortDescription:
       'Three-tier software ecosystem integrating customer channels, driver tools, and inventory dashboard controls.',
@@ -641,7 +754,11 @@ export const PORTFOLIO_PROJECTS = [
     problemStatement:
       'A regional supermarket chain was losing customers to large online grocery platforms. They needed their own branded mobile app to offer home delivery and click-and-collect services, with real-time inventory and delivery tracking.',
     solutionDescription:
+<<<<<<< HEAD
       'MaVionix built a full grocery delivery app ecosystem -a customer-facing app, a delivery partner app, and an admin dashboard. The customer app features product browsing, smart search, slot-based delivery scheduling, and real-time order tracking.',
+=======
+      'MaVionix built a full grocery delivery app ecosystem — a customer-facing app, a delivery partner app, and an admin dashboard. The customer app features product browsing, smart search, slot-based delivery scheduling, and real-time order tracking.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     outcomes: [
       'The supermarket recorded 800 app orders in the first 2 weeks',
       'Delivery capacity reached 95% utilization by week 4',
@@ -663,7 +780,11 @@ export const PORTFOLIO_PROJECTS = [
     id: 'digital-marketing-campaign-edtech',
     slug: 'digital-marketing-campaign-edtech',
     category: 'marketing',
+<<<<<<< HEAD
     categoryLabel: 'Digital Marketing -Multi-Channel Campaign',
+=======
+    categoryLabel: 'Digital Marketing — Multi-Channel Campaign',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     title: '360-Degree Digital Marketing Campaign for EdTech Brand',
     shortDescription:
       'Integrated acquisition network linking targeted paid media, content creation, and lead nurturing pipelines.',
@@ -681,7 +802,11 @@ export const PORTFOLIO_PROJECTS = [
     problemStatement:
       'An EdTech startup offering online professional certification courses struggled with low enrollment despite having quality content. Their social media presence was weak, paid ads were underperforming, and organic traffic to their website was negligible.',
     solutionDescription:
+<<<<<<< HEAD
       'MaVionix executed a 90-day multi-channel digital marketing campaign encompassing Google Ads, Meta Ads, LinkedIn content marketing, SEO-driven blog content, and email marketing automation -all targeting working professionals aged 24–40.',
+=======
+      'MaVionix executed a 90-day multi-channel digital marketing campaign encompassing Google Ads, Meta Ads, LinkedIn content marketing, SEO-driven blog content, and email marketing automation — all targeting working professionals aged 24–40.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     outcomes: [
       'Course enrollments increased by 240% over the 90-day period',
       'Cost per lead dropped from Rs. 480 to Rs. 190 through ongoing optimization',
@@ -703,7 +828,11 @@ export const PORTFOLIO_PROJECTS = [
     id: 'social-media-management-beauty',
     slug: 'social-media-management-beauty',
     category: 'marketing',
+<<<<<<< HEAD
     categoryLabel: 'Digital Marketing -Social Media Management',
+=======
+    categoryLabel: 'Digital Marketing — Social Media Management',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     title: 'Social Media Management for D2C Beauty Brand',
     shortDescription:
       'Comprehensive grid optimization strategy managing branded multi-media channels and influencer relations.',
@@ -720,7 +849,11 @@ export const PORTFOLIO_PROJECTS = [
     problemStatement:
       'A direct-to-consumer beauty brand had built a product line but had no structured social media strategy. Their Instagram account had 800 followers and inconsistent posting. They needed a professional social media presence to build community and drive product sales.',
     solutionDescription:
+<<<<<<< HEAD
       'MaVionix took over full social media management for Instagram, Facebook, and Pinterest -developing a content calendar, creating branded visual content, writing copy, running engagement campaigns, and managing influencer micro-partnerships to grow the audience.',
+=======
+      'MaVionix took over full social media management for Instagram, Facebook, and Pinterest — developing a content calendar, creating branded visual content, writing copy, running engagement campaigns, and managing influencer micro-partnerships to grow the audience.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     outcomes: [
       'Instagram followers grew from 800 to 8,400 in 4 months',
       'Average post reach increased by 620%',
@@ -742,7 +875,11 @@ export const PORTFOLIO_PROJECTS = [
     id: 'technical-seo-legal-firm',
     slug: 'technical-seo-legal-firm',
     category: 'seo',
+<<<<<<< HEAD
     categoryLabel: 'SEO Services -Technical SEO & Content',
+=======
+    categoryLabel: 'SEO Services — Technical SEO & Content',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     title: 'Technical SEO Overhaul for Legal Services Firm',
     shortDescription:
       'Deep system engineering audit correcting performance parameters, structural data schemas, and local maps footprints.',
@@ -758,9 +895,15 @@ export const PORTFOLIO_PROJECTS = [
       'Schema.org markup',
     ],
     problemStatement:
+<<<<<<< HEAD
       'A law firm with 15 years of experience had virtually no organic search visibility. Their website had critical technical issues -slow load times, duplicate content, missing meta tags, and no structured data -resulting in zero first-page rankings for their target keywords.',
     solutionDescription:
       'MaVionix performed a comprehensive technical SEO audit and implementation -fixing all on-page and technical issues, creating a structured keyword strategy, developing 10 long-form SEO articles, implementing schema markup, and building a local citation network for the firm\'s offices.',
+=======
+      'A law firm with 15 years of experience had virtually no organic search visibility. Their website had critical technical issues — slow load times, duplicate content, missing meta tags, and no structured data — resulting in zero first-page rankings for their target keywords.',
+    solutionDescription:
+      'MaVionix performed a comprehensive technical SEO audit and implementation — fixing all on-page and technical issues, creating a structured keyword strategy, developing 10 long-form SEO articles, implementing schema markup, and building a local citation network for the firm\'s offices.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     outcomes: [
       'Organic search traffic increased by 310% within 6 months',
       'The firm achieved 14 first-page Google rankings for competitive legal keywords',
@@ -782,7 +925,11 @@ export const PORTFOLIO_PROJECTS = [
     id: 'local-seo-dental-clinic',
     slug: 'local-seo-dental-clinic',
     category: 'seo',
+<<<<<<< HEAD
     categoryLabel: 'SEO Services -Local SEO',
+=======
+    categoryLabel: 'SEO Services — Local SEO',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     title: 'Local SEO Campaign for Multi-Location Dental Clinic',
     shortDescription:
       'Multi-territory search engineering configuring localized index endpoints and continuous customer review systems.',
@@ -800,7 +947,11 @@ export const PORTFOLIO_PROJECTS = [
     problemStatement:
       'A dental clinic chain with 4 locations was not appearing in local Google search results or Google Maps for relevant searches like \'dentist near me\' or \'teeth whitening in [city]\'. Walk-in patients from organic search were minimal.',
     solutionDescription:
+<<<<<<< HEAD
       'MaVionix implemented a targeted local SEO strategy for all 4 clinic locations -including Google My Business optimization, location-specific landing pages, local citation building, review generation campaigns, and localized content creation.',
+=======
+      'MaVionix implemented a targeted local SEO strategy for all 4 clinic locations — including Google My Business optimization, location-specific landing pages, local citation building, review generation campaigns, and localized content creation.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     outcomes: [
       'All 4 locations entered the Google Maps 3-Pack for their primary keywords within 3 months',
       'Organic walk-in appointments increased by 58% across all locations',
@@ -822,7 +973,11 @@ export const PORTFOLIO_PROJECTS = [
     id: 'penetration-testing-fintech-app',
     slug: 'penetration-testing-fintech-app',
     category: 'cybersecurity',
+<<<<<<< HEAD
     categoryLabel: 'Cybersecurity -Penetration Testing',
+=======
+    categoryLabel: 'Cybersecurity — Penetration Testing',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     title: 'Penetration Testing & Security Audit for FinTech App',
     shortDescription:
       'Vulnerability scanning, infrastructure auditing, and API exploit detection framework aligned with compliance guidelines.',
@@ -862,7 +1017,11 @@ export const PORTFOLIO_PROJECTS = [
     id: 'cybersecurity-awareness-training',
     slug: 'cybersecurity-awareness-training',
     category: 'cybersecurity',
+<<<<<<< HEAD
     categoryLabel: 'Cybersecurity -Security Training & Policy',
+=======
+    categoryLabel: 'Cybersecurity — Security Training & Policy',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     title: 'Cybersecurity Awareness Training for SME',
     shortDescription:
       'Enterprise security alignment combining interactive threat response drills and structural infrastructure hardening criteria.',
@@ -878,7 +1037,11 @@ export const PORTFOLIO_PROJECTS = [
     problemStatement:
       'A mid-sized manufacturing company experienced a phishing attack that compromised 3 employee email accounts. The root cause was a complete lack of cybersecurity awareness among staff. The company had no security policies, no training program, and no incident response plan.',
     solutionDescription:
+<<<<<<< HEAD
       'MaVionix designed and delivered a comprehensive cybersecurity awareness program -including staff training workshops, simulated phishing campaigns, an incident response plan, and a set of security policies tailored to the company\'s operational context.',
+=======
+      'MaVionix designed and delivered a comprehensive cybersecurity awareness program — including staff training workshops, simulated phishing campaigns, an incident response plan, and a set of security policies tailored to the company\'s operational context.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     outcomes: [
       'Phishing simulation success rate (employees who clicked) dropped from 67% to 8% within 2 months of training',
       'The company successfully implemented MFA across all 80 employee accounts',
@@ -900,7 +1063,11 @@ export const PORTFOLIO_PROJECTS = [
     id: 'bi-dashboard-retail-chain',
     slug: 'bi-dashboard-retail-chain',
     category: 'data-analytics',
+<<<<<<< HEAD
     categoryLabel: 'Data Analytics & AI Solutions -Business Intelligence',
+=======
+    categoryLabel: 'Data Analytics & AI Solutions — Business Intelligence',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     title: 'Business Intelligence Dashboard for Retail Chain',
     shortDescription:
       'Centralized automated data warehouse processing disjointed legacy operational logs into synchronized BI dashboards.',
@@ -918,7 +1085,11 @@ export const PORTFOLIO_PROJECTS = [
     problemStatement:
       'A retail chain with 12 stores was making inventory and pricing decisions based on intuition rather than data. They had years of sales data in disparate spreadsheets and a legacy POS system but no centralized reporting or analytical capability. Management had no visibility into which products, stores, or promotions were driving profitability.',
     solutionDescription:
+<<<<<<< HEAD
       'MaVionix built a centralized business intelligence platform -integrating data from the POS system, inventory management software, and e-commerce store into a single data warehouse, then building interactive Power BI dashboards for sales, inventory, and marketing performance.',
+=======
+      'MaVionix built a centralized business intelligence platform — integrating data from the POS system, inventory management software, and e-commerce store into a single data warehouse, then building interactive Power BI dashboards for sales, inventory, and marketing performance.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     outcomes: [
       'Management identified Rs. 24 lakh worth of dead stock within the first month, enabling targeted clearance campaigns',
       'Inventory reorder accuracy improved by 43%, reducing both stockouts and overstock situations',
@@ -939,7 +1110,11 @@ export const PORTFOLIO_PROJECTS = [
     id: 'predictive-analytics-hr-workforce',
     slug: 'predictive-analytics-hr-workforce',
     category: 'data-analytics',
+<<<<<<< HEAD
     categoryLabel: 'Data Analytics & AI Solutions -Predictive AI',
+=======
+    categoryLabel: 'Data Analytics & AI Solutions — Predictive AI',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     title: 'Predictive Analytics Model for HR & Workforce Planning',
     shortDescription:
       'Explainable machine learning modeling suite visualizing personnel attrition trends via interactive deployment panels.',
@@ -998,7 +1173,11 @@ export const CLIENT_TESTIMONIALS = [
   {
     id: 'rajiv-pinnacle',
     quote:
+<<<<<<< HEAD
       'Working with MaVionix was a game-changer for our business. They built us a corporate website that truly reflects our brand. Within 6 weeks of going live, we had new clients reaching out directly through the site -something we had never experienced before.',
+=======
+      'Working with MaVionix was a game-changer for our business. They built us a corporate website that truly reflects our brand. Within 6 weeks of going live, we had new clients reaching out directly through the site — something we had never experienced before.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     name: 'Rajiv Sharma',
     role: 'Managing Director',
     company: 'Pinnacle Consulting Group',
@@ -1018,7 +1197,11 @@ export const CLIENT_TESTIMONIALS = [
   {
     id: 'ankit-restaurant',
     quote:
+<<<<<<< HEAD
       'Our old website was just embarrassing. MaVionix redesigned it completely -clean, professional, mobile-ready. Our Google rankings improved noticeably, and we get a steady flow of booking inquiries through the site now. Highly recommend their team.',
+=======
+      'Our old website was just embarrassing. MaVionix redesigned it completely — clean, professional, mobile-ready. Our Google rankings improved noticeably, and we get a steady flow of booking inquiries through the site now. Highly recommend their team.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     name: 'Ankit Verma',
     role: 'Owner',
     company: 'The Grand Spice Restaurant Chain',
@@ -1090,7 +1273,11 @@ export const WHY_CHOOSE_ITEMS = [
     number: '04',
     title: 'SEO-Optimized Development',
     description:
+<<<<<<< HEAD
       'Every website MaVionix builds is developed with SEO best practices embedded from the ground up -including semantic HTML, optimized meta tags, schema markup, and Core Web Vitals compliance.',
+=======
+      'Every website MaVionix builds is developed with SEO best practices embedded from the ground up — including semantic HTML, optimized meta tags, schema markup, and Core Web Vitals compliance.',
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     purpose:
       'To ensure that client websites gain maximum organic search visibility from day one of launch, reducing dependency on paid advertising.',
   },

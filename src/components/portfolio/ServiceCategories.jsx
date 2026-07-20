@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { motion } from 'motion/react';
 import { SERVICE_CATEGORIES } from '../../data/portfolio';
 import { getServiceIcon } from './iconMap';
@@ -11,6 +12,16 @@ const ServiceCategories = ({ sectionRef }) => {
   const cardTransition = useCardTransition();
 
   return (
+=======
+import { SERVICE_CATEGORIES } from '../../data/portfolio';
+import { getServiceIcon } from './iconMap';
+import SectionHeader from '../ui/SectionHeader';
+
+/**
+ * ServiceCategories — Full services showcase (blueprint Section 3, 14 service lines).
+ */
+const ServiceCategories = ({ sectionRef }) => (
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   <section
     ref={sectionRef}
     id="services"
@@ -22,6 +33,7 @@ const ServiceCategories = ({ sectionRef }) => {
         id="services-heading"
         badge="What We Build"
         title="Services Showcase"
+<<<<<<< HEAD
         subtitle="Web Development, UI/UX Design, AI Solutions, Digital Marketing, Mobile Apps, Cybersecurity, and Data Analytics -end-to-end digital services for businesses that demand results."
       />
 
@@ -36,6 +48,17 @@ const ServiceCategories = ({ sectionRef }) => {
               viewport={cardViewport}
               variants={cardFadeUp}
               transition={cardTransition(index)}
+=======
+        subtitle="Web Development, UI/UX Design, AI Solutions, Digital Marketing, Mobile Apps, Cybersecurity, and Data Analytics — end-to-end digital services for businesses that demand results."
+      />
+
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
+        {SERVICE_CATEGORIES.map((service) => {
+          const Icon = getServiceIcon(service.icon);
+          return (
+            <article
+              key={service.id}
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
               className="group rounded-2xl border border-slate-200 bg-white/90 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-400/10 dark:border-white/10 dark:bg-[#081019] dark:hover:border-blue-400/35"
             >
               <span className="text-xs font-bold text-blue-600 dark:text-blue-400">{service.number}</span>
@@ -48,13 +71,21 @@ const ServiceCategories = ({ sectionRef }) => {
                 <span className="font-semibold text-slate-700 dark:text-slate-300">Purpose: </span>
                 {service.purpose}
               </p>
+<<<<<<< HEAD
             </motion.article>
+=======
+            </article>
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           );
         })}
       </div>
     </div>
   </section>
+<<<<<<< HEAD
   );
 };
+=======
+);
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
 export default ServiceCategories;

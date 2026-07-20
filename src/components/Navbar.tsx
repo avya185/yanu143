@@ -2,7 +2,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import { ChevronDown, Menu, Moon, Sun, X } from 'lucide-react';
 import { useCurrency, SUPPORTED_CURRENCIES } from '../context/CurrencyContext';
 import { SERVICES } from '../data';
+<<<<<<< HEAD
 import { PRODUCT_SUITES } from '../data/productSuites';
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 
 interface NavbarProps {
   currentView: string;
@@ -18,25 +21,37 @@ export default function Navbar({ currentView, theme, onThemeToggle, onViewChange
   const [resourcesOpen, setResourcesOpen] = useState(false);
   const [industriesOpen, setIndustriesOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+<<<<<<< HEAD
   const [productOpen, setProductOpen] = useState(false);
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   const [currencyOpen, setCurrencyOpen] = useState(false);
   const [mobileCompanyOpen, setMobileCompanyOpen] = useState(false);
   const [mobileResourcesOpen, setMobileResourcesOpen] = useState(false);
   const [mobileIndustriesOpen, setMobileIndustriesOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+<<<<<<< HEAD
   const [mobileProductOpen, setMobileProductOpen] = useState(false);
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   const [mobileCurrencyOpen, setMobileCurrencyOpen] = useState(false);
   const companyMenuRef = useRef<HTMLLIElement>(null);
   const resourcesMenuRef = useRef<HTMLLIElement>(null);
   const industriesMenuRef = useRef<HTMLLIElement>(null);
   const servicesMenuRef = useRef<HTMLLIElement>(null);
+<<<<<<< HEAD
   const productMenuRef = useRef<HTMLLIElement>(null);
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   const currencyMenuRef = useRef<HTMLDivElement>(null);
   const companyCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 const resourcesCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 const industriesCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 const servicesCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+<<<<<<< HEAD
 const productCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 const currencyCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
 const openCompanyMenu = () => {
@@ -67,6 +82,7 @@ const openServicesMenu = () => {
 const closeServicesMenuDelayed = () => {
   servicesCloseTimer.current = setTimeout(() => setServicesOpen(false), 50);
 };
+<<<<<<< HEAD
 const openProductMenu = () => {
   if (productCloseTimer.current) clearTimeout(productCloseTimer.current);
   setProductOpen(true);
@@ -74,6 +90,8 @@ const openProductMenu = () => {
 const closeProductMenuDelayed = () => {
   productCloseTimer.current = setTimeout(() => setProductOpen(false), 50);
 };
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
 const openCurrencyMenu = () => {
   if (currencyCloseTimer.current) clearTimeout(currencyCloseTimer.current);
   setCurrencyOpen(true);
@@ -98,7 +116,10 @@ const closeCurrencyMenuDelayed = () => {
       setMobileResourcesOpen(false);
       setMobileIndustriesOpen(false);
       setMobileServicesOpen(false);
+<<<<<<< HEAD
       setMobileProductOpen(false);
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
       setMobileCurrencyOpen(false);
     }
   }, [mobileMenuOpen]);
@@ -118,9 +139,12 @@ const closeCurrencyMenuDelayed = () => {
       if (servicesMenuRef.current && !servicesMenuRef.current.contains(target)) {
         setServicesOpen(false);
       }
+<<<<<<< HEAD
       if (productMenuRef.current && !productMenuRef.current.contains(target)) {
         setProductOpen(false);
       }
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
       if (currencyMenuRef.current && !currencyMenuRef.current.contains(target)) {
         setCurrencyOpen(false);
       }
@@ -132,7 +156,10 @@ const closeCurrencyMenuDelayed = () => {
         setResourcesOpen(false);
         setIndustriesOpen(false);
         setServicesOpen(false);
+<<<<<<< HEAD
         setProductOpen(false);
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
         setCurrencyOpen(false);
       }
     };
@@ -187,8 +214,11 @@ const ctaButtonStyle = {
 
   const serviceLinks = SERVICES.map((cat) => ({ id: cat.label, label: cat.label }));
 
+<<<<<<< HEAD
   const productLinks = PRODUCT_SUITES.map((suite) => ({ slug: suite.slug as string | null, label: suite.shortName + ' Suite' }));
 
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   const industryLinks = [
     { id: 'hospitality-tourism', label: 'Hospitality & Tourism' },
     { id: 'e-commerce', label: 'E-Commerce' },
@@ -208,12 +238,16 @@ const ctaButtonStyle = {
     setCompanyOpen(false);
     setResourcesOpen(false);
     setIndustriesOpen(false);
+<<<<<<< HEAD
     setServicesOpen(false);
     setProductOpen(false);
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     setCurrencyOpen(false);
     setMobileCompanyOpen(false);
     setMobileResourcesOpen(false);
     setMobileIndustriesOpen(false);
+<<<<<<< HEAD
     setMobileServicesOpen(false);
     setMobileProductOpen(false);
     setMobileCurrencyOpen(false);
@@ -234,6 +268,8 @@ const ctaButtonStyle = {
     setMobileIndustriesOpen(false);
     setMobileServicesOpen(false);
     setMobileProductOpen(false);
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
     setMobileCurrencyOpen(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -277,7 +313,10 @@ const ctaButtonStyle = {
     setResourcesOpen(false);
     setIndustriesOpen(false);
     setServicesOpen(false);
+<<<<<<< HEAD
     setProductOpen(false);
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   };
 
   const toggleResourcesMenu = () => {
@@ -285,7 +324,10 @@ const ctaButtonStyle = {
     setCompanyOpen(false);
     setIndustriesOpen(false);
     setServicesOpen(false);
+<<<<<<< HEAD
     setProductOpen(false);
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
   };
 
   const dropdownPanel = 'absolute left-0 top-full mt-2 w-52 overflow-hidden rounded-2xl border border-slate-200/80 bg-white/95 shadow-[0_20px_45px_rgba(15,23,42,0.12)] backdrop-blur-xl dark:border-slate-800/80 dark:bg-slate-950/95';
@@ -327,6 +369,7 @@ const ctaButtonStyle = {
                 {currentView === 'home' && <span className="absolute inset-x-2 bottom-1 h-[2px] rounded-full bg-gradient-to-r from-purple-700 via-indigo-600 to-violet-500" />}
               </button>
             </li>
+<<<<<<< HEAD
             <li role="none" ref={productMenuRef} className="relative shrink-0" onMouseEnter={openProductMenu} onMouseLeave={closeProductMenuDelayed}>
               <button
                 onClick={() => handleLinkClick('product')}
@@ -354,6 +397,8 @@ const ctaButtonStyle = {
                 </div>
               </div>
             </li>
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
             <li role="none" ref={servicesMenuRef} className="relative shrink-0" onMouseEnter={openServicesMenu} onMouseLeave={closeServicesMenuDelayed}>
               <button
                 onClick={() => handleLinkClick('services')}
@@ -575,6 +620,7 @@ const ctaButtonStyle = {
             <li role="none">
               <div className="flex items-center gap-1">
                 <button
+<<<<<<< HEAD
                   onClick={() => handleLinkClick('product')}
                   role="menuitem"
                   className={`${mobileNavItemClass(currentView === 'product')} flex-1`}
@@ -608,6 +654,8 @@ const ctaButtonStyle = {
             <li role="none">
               <div className="flex items-center gap-1">
                 <button
+=======
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
                   onClick={() => handleLinkClick('services')}
                   role="menuitem"
                   className={`${mobileNavItemClass(currentView === 'services')} flex-1`}
@@ -803,9 +851,15 @@ const ctaButtonStyle = {
           </ul>
 
           <div className="mt-auto display:flex justify-center text-center text-xs text-slate-400 dark:text-slate-600 border-t border-slate-100 dark:border-slate-900 pt-4 pb-3 ">
+<<<<<<< HEAD
             MaVionix Pvt. Ltd.
             <br />
             A-1/86, Sector-17, <br></br> Rohini, Delhi - 110089
+=======
+            MaVionix Agency Co.
+            <br />
+            Rohini, Delhi - 110085
+>>>>>>> f4a6bbe3ce63bf2d37ccd787728ab3dd069bc4ed
           </div>
         </div>
       </div>
